@@ -16,10 +16,15 @@ namespace WindowsFormsAppSellPoint
         {
             InitializeComponent();
         }
+
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
 
-
+    //Testing
 
 
     // hola x2
