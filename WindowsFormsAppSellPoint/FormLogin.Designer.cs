@@ -30,12 +30,12 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageCredenciales = new System.Windows.Forms.TabPage();
-            this.buttonCancelar = new System.Windows.Forms.Button();
-            this.buttonAceptar = new System.Windows.Forms.Button();
+            this.textBoxContrasena = new System.Windows.Forms.TextBox();
+            this.textBoxUsuario = new System.Windows.Forms.TextBox();
             this.labelUsuario = new System.Windows.Forms.Label();
             this.labelContrasena = new System.Windows.Forms.Label();
-            this.textBoxUsuario = new System.Windows.Forms.TextBox();
-            this.textBoxContrasena = new System.Windows.Forms.TextBox();
+            this.buttonCancelar = new System.Windows.Forms.Button();
+            this.buttonAceptar = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPageCredenciales.SuspendLayout();
             this.SuspendLayout();
@@ -65,43 +65,12 @@
             this.tabPageCredenciales.Text = "Credenciales";
             this.tabPageCredenciales.UseVisualStyleBackColor = true;
             // 
-            // buttonCancelar
+            // textBoxContrasena
             // 
-            this.buttonCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCancelar.Location = new System.Drawing.Point(215, 178);
-            this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Size = new System.Drawing.Size(80, 23);
-            this.buttonCancelar.TabIndex = 1;
-            this.buttonCancelar.Text = "Cancelar";
-            this.buttonCancelar.UseVisualStyleBackColor = true;
-            // 
-            // buttonAceptar
-            // 
-            this.buttonAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAceptar.Location = new System.Drawing.Point(131, 178);
-            this.buttonAceptar.Name = "buttonAceptar";
-            this.buttonAceptar.Size = new System.Drawing.Size(80, 23);
-            this.buttonAceptar.TabIndex = 2;
-            this.buttonAceptar.Text = "Aceptar";
-            this.buttonAceptar.UseVisualStyleBackColor = true;
-            // 
-            // labelUsuario
-            // 
-            this.labelUsuario.AutoSize = true;
-            this.labelUsuario.Location = new System.Drawing.Point(6, 18);
-            this.labelUsuario.Name = "labelUsuario";
-            this.labelUsuario.Size = new System.Drawing.Size(61, 16);
-            this.labelUsuario.TabIndex = 3;
-            this.labelUsuario.Text = "Usuario";
-            // 
-            // labelContrasena
-            // 
-            this.labelContrasena.AutoSize = true;
-            this.labelContrasena.Location = new System.Drawing.Point(6, 56);
-            this.labelContrasena.Name = "labelContrasena";
-            this.labelContrasena.Size = new System.Drawing.Size(86, 16);
-            this.labelContrasena.TabIndex = 0;
-            this.labelContrasena.Text = "Contraseña";
+            this.textBoxContrasena.Location = new System.Drawing.Point(115, 53);
+            this.textBoxContrasena.Name = "textBoxContrasena";
+            this.textBoxContrasena.Size = new System.Drawing.Size(158, 22);
+            this.textBoxContrasena.TabIndex = 5;
             // 
             // textBoxUsuario
             // 
@@ -110,22 +79,57 @@
             this.textBoxUsuario.Size = new System.Drawing.Size(158, 22);
             this.textBoxUsuario.TabIndex = 4;
             // 
-            // textBoxContrasena
+            // labelUsuario
             // 
-            this.textBoxContrasena.Location = new System.Drawing.Point(115, 53);
-            this.textBoxContrasena.Name = "textBoxContrasena";
-            this.textBoxContrasena.Size = new System.Drawing.Size(158, 22);
-            this.textBoxContrasena.TabIndex = 5;
+            this.labelUsuario.AutoSize = true;
+            this.labelUsuario.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labelUsuario.Location = new System.Drawing.Point(6, 18);
+            this.labelUsuario.Name = "labelUsuario";
+            this.labelUsuario.Size = new System.Drawing.Size(63, 18);
+            this.labelUsuario.TabIndex = 3;
+            this.labelUsuario.Text = "Usuario";
+            // 
+            // labelContrasena
+            // 
+            this.labelContrasena.AutoSize = true;
+            this.labelContrasena.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labelContrasena.Location = new System.Drawing.Point(6, 56);
+            this.labelContrasena.Name = "labelContrasena";
+            this.labelContrasena.Size = new System.Drawing.Size(88, 18);
+            this.labelContrasena.TabIndex = 0;
+            this.labelContrasena.Text = "Contraseña";
+            // 
+            // buttonCancelar
+            // 
+            this.buttonCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCancelar.Location = new System.Drawing.Point(131, 174);
+            this.buttonCancelar.Name = "buttonCancelar";
+            this.buttonCancelar.Size = new System.Drawing.Size(80, 23);
+            this.buttonCancelar.TabIndex = 1;
+            this.buttonCancelar.Text = "Cancelar";
+            this.buttonCancelar.UseVisualStyleBackColor = true;
+            // 
+            // buttonAceptar
+            // 
+            this.buttonAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAceptar.Location = new System.Drawing.Point(28, 174);
+            this.buttonAceptar.Name = "buttonAceptar";
+            this.buttonAceptar.Size = new System.Drawing.Size(80, 23);
+            this.buttonAceptar.TabIndex = 2;
+            this.buttonAceptar.Text = "Aceptar";
+            this.buttonAceptar.UseVisualStyleBackColor = true;
             // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(311, 213);
+            this.ClientSize = new System.Drawing.Size(334, 242);
             this.Controls.Add(this.buttonAceptar);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.tabControl1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "FormLogin";
             this.Text = "Acceso al sistema";
             this.tabControl1.ResumeLayout(false);
