@@ -13,5 +13,9 @@ namespace WindowsFormsAppSellPoint
         private void FormLogin_Load(object sender, EventArgs e)
         {
         }
+
+        private void buttonAceptar_Click(object sender, EventArgs e)
+        {
+        }
     }
 }
