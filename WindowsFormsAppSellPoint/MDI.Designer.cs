@@ -100,6 +100,7 @@
             // 
             this.radMenuItem6.Name = "radMenuItem6";
             this.radMenuItem6.Text = "Acerca de...";
+            this.radMenuItem6.Click += new System.EventHandler(this.radMenuItem6_Click);
             // 
             // radMenuSeparatorItem3
             // 

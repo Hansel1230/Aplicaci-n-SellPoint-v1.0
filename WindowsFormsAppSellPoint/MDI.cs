@@ -53,5 +53,11 @@ namespace WindowsFormsAppSellPoint
             FormLogin login = new FormLogin();
             login.Show();
         }
+
+        private void radMenuItem6_Click(object sender, EventArgs e)
+        {
+            FormAcercaDe formAcercaDe = new FormAcercaDe();
+            formAcercaDe.Show();
+        }
     }
 }
