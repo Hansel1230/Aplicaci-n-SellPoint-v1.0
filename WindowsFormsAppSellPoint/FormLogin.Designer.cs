@@ -71,6 +71,8 @@
             this.textBoxContrasena.Name = "textBoxContrasena";
             this.textBoxContrasena.Size = new System.Drawing.Size(158, 22);
             this.textBoxContrasena.TabIndex = 5;
+            this.textBoxContrasena.Click += new System.EventHandler(this.textBoxContrasena_Click);
+            this.textBoxContrasena.Leave += new System.EventHandler(this.textBoxContrasena_Leave);
             // 
             // textBoxUsuario
             // 
@@ -78,22 +80,26 @@
             this.textBoxUsuario.Name = "textBoxUsuario";
             this.textBoxUsuario.Size = new System.Drawing.Size(158, 22);
             this.textBoxUsuario.TabIndex = 4;
+            this.textBoxUsuario.Click += new System.EventHandler(this.textBoxUsuario_Click);
+            this.textBoxUsuario.Leave += new System.EventHandler(this.textBoxUsuario_Leave);
             // 
             // labelUsuario
             // 
             this.labelUsuario.AutoSize = true;
+            this.labelUsuario.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.labelUsuario.Location = new System.Drawing.Point(6, 18);
             this.labelUsuario.Name = "labelUsuario";
-            this.labelUsuario.Size = new System.Drawing.Size(61, 16);
+            this.labelUsuario.Size = new System.Drawing.Size(63, 18);
             this.labelUsuario.TabIndex = 3;
             this.labelUsuario.Text = "Usuario";
             // 
             // labelContrasena
             // 
             this.labelContrasena.AutoSize = true;
+            this.labelContrasena.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.labelContrasena.Location = new System.Drawing.Point(6, 56);
             this.labelContrasena.Name = "labelContrasena";
-            this.labelContrasena.Size = new System.Drawing.Size(86, 16);
+            this.labelContrasena.Size = new System.Drawing.Size(88, 18);
             this.labelContrasena.TabIndex = 0;
             this.labelContrasena.Text = "Contraseña";
             // 
@@ -106,6 +112,7 @@
             this.buttonCancelar.TabIndex = 1;
             this.buttonCancelar.Text = "Cancelar";
             this.buttonCancelar.UseVisualStyleBackColor = true;
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
             // buttonAceptar
             // 
@@ -122,11 +129,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(311, 213);
+            this.ClientSize = new System.Drawing.Size(300, 208);
             this.Controls.Add(this.buttonAceptar);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.tabControl1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "FormLogin";
             this.Text = "Acceso al sistema";
             this.Load += new System.EventHandler(this.FormLogin_Load);
