@@ -16,5 +16,10 @@ namespace WindowsFormsAppSellPoint
         {
             InitializeComponent();
         }
+
+        private void TiposEntidades_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
