@@ -8,5 +8,6 @@ namespace Netframework.Layers.ADO.Net.Data
 {
     internal class ClassData
     {
+
     }
 }

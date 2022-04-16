@@ -71,6 +71,8 @@
             this.textBoxContrasena.Name = "textBoxContrasena";
             this.textBoxContrasena.Size = new System.Drawing.Size(158, 22);
             this.textBoxContrasena.TabIndex = 5;
+            this.textBoxContrasena.Click += new System.EventHandler(this.textBoxContrasena_Click);
+            this.textBoxContrasena.Leave += new System.EventHandler(this.textBoxContrasena_Leave);
             // 
             // textBoxUsuario
             // 
@@ -78,6 +80,8 @@
             this.textBoxUsuario.Name = "textBoxUsuario";
             this.textBoxUsuario.Size = new System.Drawing.Size(158, 22);
             this.textBoxUsuario.TabIndex = 4;
+            this.textBoxUsuario.Click += new System.EventHandler(this.textBoxUsuario_Click);
+            this.textBoxUsuario.Leave += new System.EventHandler(this.textBoxUsuario_Leave);
             // 
             // labelUsuario
             // 

@@ -42,11 +42,10 @@ namespace WindowsFormsAppSellPoint
             login.Show();
         }
 
-        private void horaFecha_Tick(object sender, EventArgs e)
+        private void radMenuItem6_Click(object sender, EventArgs e)
         {
-            statusBar1.Panels[0].Text = DateTime.Now.ToLongTimeString();
-
-            statusBar1.Panels[1].Text = DateTime.Now.ToLongDateString();
+            FormAcercaDe formAcercaDe = new FormAcercaDe();
+            formAcercaDe.Show();
         }
     }
 }
