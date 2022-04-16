@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageCredenciales = new System.Windows.Forms.TabPage();
             this.textBoxContrasena = new System.Windows.Forms.TextBox();
@@ -99,9 +98,8 @@
             // 
             this.labelContrasena.AutoSize = true;
             this.labelContrasena.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.labelContrasena.Location = new System.Drawing.Point(7, 56);
-            this.labelContrasena.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelContrasena.Location = new System.Drawing.Point(6, 56);
+            this.labelContrasena.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelContrasena.Name = "labelContrasena";
             this.labelContrasena.Size = new System.Drawing.Size(88, 18);
             this.labelContrasena.TabIndex = 0;
@@ -110,12 +108,9 @@
             // buttonCancelar
             // 
             this.buttonCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCancelar.Image = ((System.Drawing.Image)(resources.GetObject("buttonCancelar.Image")));
-            this.buttonCancelar.Location = new System.Drawing.Point(152, 178);
-            this.buttonCancelar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCancelar.Location = new System.Drawing.Point(215, 178);
+            this.buttonCancelar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Size = new System.Drawing.Size(64, 23);
             this.buttonCancelar.TabIndex = 1;
@@ -124,32 +119,26 @@
             // buttonAceptar
             // 
             this.buttonAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAceptar.Image = ((System.Drawing.Image)(resources.GetObject("buttonAceptar.Image")));
-            this.buttonAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonAceptar.Location = new System.Drawing.Point(60, 178);
-            this.buttonAceptar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonAceptar.Location = new System.Drawing.Point(131, 178);
+            this.buttonAceptar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonAceptar.Name = "buttonAceptar";
             this.buttonAceptar.Size = new System.Drawing.Size(53, 23);
             this.buttonAceptar.TabIndex = 2;
             this.buttonAceptar.UseVisualStyleBackColor = true;
-           
+            this.buttonAceptar.Click += new System.EventHandler(this.buttonAceptar_Click);
             // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(416, 266);
             this.ClientSize = new System.Drawing.Size(311, 213);
             this.Controls.Add(this.buttonAceptar);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "FormLogin";
             this.Text = "Acceso al sistema";
