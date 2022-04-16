@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsAppSellPoint
 {
-    public partial class GrupoEntidades : Form
+    public partial class TiposEntidades : Form
     {
-        public GrupoEntidades()
+        public TiposEntidades()
         {
             InitializeComponent();
-        }
-
-        private void GrupoEntidades_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

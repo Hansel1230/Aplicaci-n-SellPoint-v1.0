@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsAppSellPoint
 {
-    partial class GrupoEntidades
+    partial class Entidades
     {
         /// <summary>
         /// Required designer variable.
@@ -30,15 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // GrupoEntidades
+            // Entidades
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(669, 453);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Name = "GrupoEntidades";
-            this.Text = "GrupoEntidades";
-            this.Load += new System.EventHandler(this.GrupoEntidades_Load);
+            this.ClientSize = new System.Drawing.Size(479, 445);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Name = "Entidades";
+            this.Text = "Entidades";
             this.ResumeLayout(false);
 
         }
