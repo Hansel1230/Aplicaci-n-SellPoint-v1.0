@@ -47,5 +47,16 @@ namespace WindowsFormsAppSellPoint
             FormAcercaDe formAcercaDe = new FormAcercaDe();
             formAcercaDe.Show();
         }
+
+        private void horaFecha_Tick(object sender, EventArgs e)
+        {
+            statusBar1.Panels[0].Text = DateTime.Now.ToLongTimeString();
+            statusBar1.Panels[1].Text = DateTime.Now.ToLongDateString();
+        }
+
+        private void radMenuItem8_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -131,6 +131,7 @@
             // 
             this.radMenuItem8.Name = "radMenuItem8";
             this.radMenuItem8.Text = "Salir";
+            this.radMenuItem8.Click += new System.EventHandler(this.radMenuItem8_Click);
             // 
             // radMenu1
             // 
