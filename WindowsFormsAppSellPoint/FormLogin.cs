@@ -17,5 +17,10 @@ namespace WindowsFormsAppSellPoint
         private void buttonAceptar_Click(object sender, EventArgs e)
         {
         }
+
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -59,6 +59,7 @@
             // 
             this.radMenuItem3.Name = "radMenuItem3";
             this.radMenuItem3.Text = "Grupos Entidades";
+            this.radMenuItem3.Click += new System.EventHandler(this.radMenuItem3_Click_1);
             // 
             // radMenuSeparatorItem1
             // 
@@ -70,6 +71,7 @@
             // 
             this.radMenuItem4.Name = "radMenuItem4";
             this.radMenuItem4.Text = "Tipos Entidades";
+            this.radMenuItem4.Click += new System.EventHandler(this.radMenuItem4_Click_1);
             // 
             // radMenuSeparatorItem2
             // 
@@ -81,6 +83,7 @@
             // 
             this.radMenuItem5.Name = "radMenuItem5";
             this.radMenuItem5.Text = "Entidades";
+            this.radMenuItem5.Click += new System.EventHandler(this.radMenuItem5_Click);
             // 
             // radMenuItem2
             // 
@@ -108,6 +111,7 @@
             // 
             this.radMenuItem7.Name = "radMenuItem7";
             this.radMenuItem7.Text = "Login";
+            this.radMenuItem7.Click += new System.EventHandler(this.radMenuItem7_Click);
             // 
             // radMenuSeparatorItem4
             // 
@@ -136,7 +140,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(455, 450);
             this.Controls.Add(this.radMenu1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.IsMdiContainer = true;
             this.Name = "MDI";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
