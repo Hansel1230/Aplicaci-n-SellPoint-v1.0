@@ -107,22 +107,18 @@
             // 
             // buttonCancelar
             // 
-            this.buttonCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCancelar.Location = new System.Drawing.Point(215, 178);
-            this.buttonCancelar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Size = new System.Drawing.Size(64, 23);
             this.buttonCancelar.TabIndex = 1;
             this.buttonCancelar.UseVisualStyleBackColor = true;
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
             // buttonAceptar
             // 
-            this.buttonAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAceptar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonAceptar.Location = new System.Drawing.Point(131, 178);
-            this.buttonAceptar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonAceptar.Name = "buttonAceptar";
             this.buttonAceptar.Size = new System.Drawing.Size(53, 23);
             this.buttonAceptar.TabIndex = 2;
@@ -133,7 +129,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(311, 213);
+            this.ClientSize = new System.Drawing.Size(300, 208);
             this.Controls.Add(this.buttonAceptar);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.tabControl1);
@@ -142,6 +138,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "FormLogin";
             this.Text = "Acceso al sistema";
+            this.Load += new System.EventHandler(this.FormLogin_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPageCredenciales.ResumeLayout(false);
             this.tabPageCredenciales.PerformLayout();
