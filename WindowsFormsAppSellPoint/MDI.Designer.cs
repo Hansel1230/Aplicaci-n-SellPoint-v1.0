@@ -46,9 +46,11 @@
             this.statusBar1 = new System.Windows.Forms.StatusBar();
             this.statusBarPanel1 = new System.Windows.Forms.StatusBarPanel();
             this.statusBarPanel2 = new System.Windows.Forms.StatusBarPanel();
+            this.statusBarPanel3 = new System.Windows.Forms.StatusBarPanel();
             ((System.ComponentModel.ISupportInitialize)(this.radMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusBarPanel1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusBarPanel2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.statusBarPanel3)).BeginInit();
             this.SuspendLayout();
             // 
             // radMenuItem1
@@ -154,10 +156,12 @@
             this.statusBar1.Name = "statusBar1";
             this.statusBar1.Panels.AddRange(new System.Windows.Forms.StatusBarPanel[] {
             this.statusBarPanel1,
-            this.statusBarPanel2});
+            this.statusBarPanel2,
+            this.statusBarPanel3});
             this.statusBar1.ShowPanels = true;
             this.statusBar1.Size = new System.Drawing.Size(587, 24);
             this.statusBar1.TabIndex = 7;
+            this.statusBar1.PanelClick += new System.Windows.Forms.StatusBarPanelClickEventHandler(this.statusBar1_PanelClick);
             // 
             // statusBarPanel1
             // 
@@ -168,6 +172,11 @@
             // 
             this.statusBarPanel2.Name = "statusBarPanel2";
             this.statusBarPanel2.Text = "statusBarPanel2";
+            // 
+            // statusBarPanel3
+            // 
+            this.statusBarPanel3.Name = "statusBarPanel3";
+            this.statusBarPanel3.Text = "statusBarPanel3";
             // 
             // MDI
             // 
@@ -185,6 +194,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.radMenu1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusBarPanel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusBarPanel2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.statusBarPanel3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -208,5 +218,6 @@
         private System.Windows.Forms.StatusBar statusBar1;
         private System.Windows.Forms.StatusBarPanel statusBarPanel1;
         private System.Windows.Forms.StatusBarPanel statusBarPanel2;
+        private System.Windows.Forms.StatusBarPanel statusBarPanel3;
     }
 }

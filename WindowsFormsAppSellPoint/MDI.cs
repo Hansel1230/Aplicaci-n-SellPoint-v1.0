@@ -52,10 +52,24 @@ namespace WindowsFormsAppSellPoint
         {
             statusBar1.Panels[0].Text = DateTime.Now.ToLongTimeString();
             statusBar1.Panels[1].Text = DateTime.Now.ToLongDateString();
+            statusBar1.Panels[2].Text = "USER: "+FormLogin.UserName;
+            //StatusBarPanel userPanel = new StatusBarPanel();
+            //userPanel.Text = FormLogin.UserName;
+            //statusBar1.Panels.Add(userPanel);
+            //statusBar1.Panels.Add("User");
+            //statusBar1.Panels[2].Text = "MIP"; //FormLogin.UserName;
+            //statusBar1.Panels[2].AutoSize = StatusBarPanelAutoSize.Contents;
+            //StatusBarPanel UserName = new StatusBarPanel();
+
         }
 
         private void radMenuItem8_Click(object sender, EventArgs e)
         {
             this.Close();        }
+
+        private void statusBar1_PanelClick(object sender, StatusBarPanelClickEventArgs e)
+        {
+
+        }
     }
 }

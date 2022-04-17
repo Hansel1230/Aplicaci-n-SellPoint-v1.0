@@ -15,6 +15,4 @@ namespace Netframework.Layers.ADO.Net.Presentation
             OpcionEntidad = opcionEntidad;
         }
     }
-
-    
 }

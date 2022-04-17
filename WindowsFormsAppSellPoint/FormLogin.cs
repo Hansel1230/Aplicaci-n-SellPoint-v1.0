@@ -14,7 +14,11 @@ namespace WindowsFormsAppSellPoint
             InitializeComponent();
         }
         #endregion
+
+        #region Propiedades
         public static bool UserValid { get; set; } = false;
+        public static string UserName { get; set; } 
+        #endregion
 
         #region Eventos
         private void FormLogin_Load(object sender, EventArgs e)
@@ -23,7 +27,15 @@ namespace WindowsFormsAppSellPoint
         }
         private void buttonAceptar_Click(object sender, EventArgs e)
         {
-            logins();
+            if (textBoxUsuario.Text == "Ingrese usuario" || textBoxContrasena.Text == "Ingrese Contraseña")
+            {
+                MessageBox.Show("Ingrese usuario y Contraseña.");
+            }
+            else
+            {
+                logins();
+            }
+            
         }
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
@@ -79,6 +91,7 @@ namespace WindowsFormsAppSellPoint
                         if (dr.Read())
                         {
                             MessageBox.Show("Login exitoso.");
+                            UserName = textBoxUsuario.Text;
                             UserValid= true;
                             this.Close();
                         }
