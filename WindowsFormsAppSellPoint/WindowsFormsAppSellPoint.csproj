@@ -36,8 +36,10 @@
     <Reference Include="Syncfusion.Core.WinForms, Version=19.4460.0.48, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="Syncfusion.Shared.Base, Version=19.4460.0.48, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,6 +50,7 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Telerik.WinControls, Version=2022.1.118.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2022.1.118.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
     <Reference Include="Telerik.WinControls.UI, Version=2022.1.118.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
     <Reference Include="TelerikCommon, Version=2022.1.118.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
   </ItemGroup>
@@ -57,6 +60,12 @@
     </Compile>
     <Compile Include="Entidades.Designer.cs">
       <DependentUpon>Entidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAcercaDe.Designer.cs">
+      <DependentUpon>FormAcercaDe.cs</DependentUpon>
     </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
@@ -86,6 +95,9 @@
     </Compile>
     <EmbeddedResource Include="Entidades.resx">
       <DependentUpon>Entidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAcercaDe.resx">
+      <DependentUpon>FormAcercaDe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>

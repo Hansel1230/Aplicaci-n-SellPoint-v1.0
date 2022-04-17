@@ -73,6 +73,7 @@ namespace Netframework.Layers.ADO.Net.Data
 
     public class SqlConnetion
     {
+
         internal string? ConnetionString;
     }
 }

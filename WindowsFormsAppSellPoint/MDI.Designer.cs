@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.radMenuItem1 = new Telerik.WinControls.UI.RadMenuItem();
             this.radMenuItem3 = new Telerik.WinControls.UI.RadMenuItem();
             this.radMenuSeparatorItem1 = new Telerik.WinControls.UI.RadMenuSeparatorItem();
@@ -41,7 +42,13 @@
             this.radMenuSeparatorItem4 = new Telerik.WinControls.UI.RadMenuSeparatorItem();
             this.radMenuItem8 = new Telerik.WinControls.UI.RadMenuItem();
             this.radMenu1 = new Telerik.WinControls.UI.RadMenu();
+            this.horaFecha = new System.Windows.Forms.Timer(this.components);
+            this.statusBar1 = new System.Windows.Forms.StatusBar();
+            this.statusBarPanel1 = new System.Windows.Forms.StatusBarPanel();
+            this.statusBarPanel2 = new System.Windows.Forms.StatusBarPanel();
             ((System.ComponentModel.ISupportInitialize)(this.radMenu1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.statusBarPanel1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.statusBarPanel2)).BeginInit();
             this.SuspendLayout();
             // 
             // radMenuItem1
@@ -100,6 +107,7 @@
             // 
             this.radMenuItem6.Name = "radMenuItem6";
             this.radMenuItem6.Text = "Acerca de...";
+            this.radMenuItem6.Click += new System.EventHandler(this.radMenuItem6_Click);
             // 
             // radMenuSeparatorItem3
             // 
@@ -123,6 +131,7 @@
             // 
             this.radMenuItem8.Name = "radMenuItem8";
             this.radMenuItem8.Text = "Salir";
+            this.radMenuItem8.Click += new System.EventHandler(this.radMenuItem8_Click);
             // 
             // radMenu1
             // 
@@ -131,14 +140,41 @@
             this.radMenuItem2});
             this.radMenu1.Location = new System.Drawing.Point(0, 0);
             this.radMenu1.Name = "radMenu1";
-            this.radMenu1.Size = new System.Drawing.Size(455, 20);
+            this.radMenu1.Size = new System.Drawing.Size(587, 20);
             this.radMenu1.TabIndex = 1;
+            // 
+            // horaFecha
+            // 
+            this.horaFecha.Enabled = true;
+            this.horaFecha.Tick += new System.EventHandler(this.horaFecha_Tick);
+            // 
+            // statusBar1
+            // 
+            this.statusBar1.Location = new System.Drawing.Point(0, 468);
+            this.statusBar1.Name = "statusBar1";
+            this.statusBar1.Panels.AddRange(new System.Windows.Forms.StatusBarPanel[] {
+            this.statusBarPanel1,
+            this.statusBarPanel2});
+            this.statusBar1.ShowPanels = true;
+            this.statusBar1.Size = new System.Drawing.Size(587, 24);
+            this.statusBar1.TabIndex = 7;
+            // 
+            // statusBarPanel1
+            // 
+            this.statusBarPanel1.Name = "statusBarPanel1";
+            this.statusBarPanel1.Text = "statusBarPanel1";
+            // 
+            // statusBarPanel2
+            // 
+            this.statusBarPanel2.Name = "statusBarPanel2";
+            this.statusBarPanel2.Text = "statusBarPanel2";
             // 
             // MDI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(455, 450);
+            this.ClientSize = new System.Drawing.Size(587, 492);
+            this.Controls.Add(this.statusBar1);
             this.Controls.Add(this.radMenu1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.IsMdiContainer = true;
@@ -147,6 +183,8 @@
             this.Text = "SellPoint v1.0";
             this.Load += new System.EventHandler(this.MDI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.radMenu1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.statusBarPanel1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.statusBarPanel2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -166,5 +204,9 @@
         private Telerik.WinControls.UI.RadMenu radMenu1;
         public Telerik.WinControls.UI.RadMenuItem radMenuItem1;
         public Telerik.WinControls.UI.RadMenuItem radMenuItem2;
+        private System.Windows.Forms.Timer horaFecha;
+        private System.Windows.Forms.StatusBar statusBar1;
+        private System.Windows.Forms.StatusBarPanel statusBarPanel1;
+        private System.Windows.Forms.StatusBarPanel statusBarPanel2;
     }
 }
