@@ -37,6 +37,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Name = "TiposEntidades";
             this.Text = "Tipos Entidades";
+            this.Load += new System.EventHandler(this.TiposEntidades_Load);
             this.ResumeLayout(false);
 
         }
