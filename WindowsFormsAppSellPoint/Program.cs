@@ -16,8 +16,11 @@ namespace WindowsFormsAppSellPoint
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
             Application.Run(new FormLogin());
+            if (FormLogin.UserValid== true) 
+            {
+                Application.Run(new MDI());
+            }
         }
     }
 }
