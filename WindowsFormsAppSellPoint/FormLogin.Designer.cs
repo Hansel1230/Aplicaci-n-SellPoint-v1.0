@@ -44,10 +44,11 @@
             // 
             this.tabControl1.Controls.Add(this.tabPageCredenciales);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(12, 12);
+            this.tabControl1.Location = new System.Drawing.Point(14, 12);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(287, 160);
+            this.tabControl1.Size = new System.Drawing.Size(335, 160);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPageCredenciales
@@ -58,27 +59,30 @@
             this.tabPageCredenciales.Controls.Add(this.labelContrasena);
             this.tabPageCredenciales.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPageCredenciales.Location = new System.Drawing.Point(4, 25);
+            this.tabPageCredenciales.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabPageCredenciales.Name = "tabPageCredenciales";
-            this.tabPageCredenciales.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageCredenciales.Size = new System.Drawing.Size(279, 131);
+            this.tabPageCredenciales.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.tabPageCredenciales.Size = new System.Drawing.Size(327, 131);
             this.tabPageCredenciales.TabIndex = 0;
             this.tabPageCredenciales.Text = "Credenciales";
             this.tabPageCredenciales.UseVisualStyleBackColor = true;
             // 
             // textBoxContrasena
             // 
-            this.textBoxContrasena.Location = new System.Drawing.Point(115, 53);
+            this.textBoxContrasena.Location = new System.Drawing.Point(134, 53);
+            this.textBoxContrasena.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxContrasena.Name = "textBoxContrasena";
-            this.textBoxContrasena.Size = new System.Drawing.Size(158, 22);
+            this.textBoxContrasena.Size = new System.Drawing.Size(184, 22);
             this.textBoxContrasena.TabIndex = 5;
             this.textBoxContrasena.Click += new System.EventHandler(this.textBoxContrasena_Click);
             this.textBoxContrasena.Leave += new System.EventHandler(this.textBoxContrasena_Leave);
             // 
             // textBoxUsuario
             // 
-            this.textBoxUsuario.Location = new System.Drawing.Point(115, 18);
+            this.textBoxUsuario.Location = new System.Drawing.Point(134, 18);
+            this.textBoxUsuario.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxUsuario.Name = "textBoxUsuario";
-            this.textBoxUsuario.Size = new System.Drawing.Size(158, 22);
+            this.textBoxUsuario.Size = new System.Drawing.Size(184, 22);
             this.textBoxUsuario.TabIndex = 4;
             this.textBoxUsuario.Click += new System.EventHandler(this.textBoxUsuario_Click);
             this.textBoxUsuario.Leave += new System.EventHandler(this.textBoxUsuario_Leave);
@@ -87,7 +91,8 @@
             // 
             this.labelUsuario.AutoSize = true;
             this.labelUsuario.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.labelUsuario.Location = new System.Drawing.Point(6, 18);
+            this.labelUsuario.Location = new System.Drawing.Point(7, 18);
+            this.labelUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelUsuario.Name = "labelUsuario";
             this.labelUsuario.Size = new System.Drawing.Size(63, 18);
             this.labelUsuario.TabIndex = 3;
@@ -98,6 +103,7 @@
             this.labelContrasena.AutoSize = true;
             this.labelContrasena.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.labelContrasena.Location = new System.Drawing.Point(6, 56);
+            this.labelContrasena.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelContrasena.Name = "labelContrasena";
             this.labelContrasena.Size = new System.Drawing.Size(88, 18);
             this.labelContrasena.TabIndex = 0;
@@ -109,7 +115,7 @@
             this.buttonCancelar.Location = new System.Drawing.Point(215, 178);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Size = new System.Drawing.Size(80, 23);
-            this.buttonCancelar.TabIndex = 2;
+            this.buttonCancelar.TabIndex = 1;
             this.buttonCancelar.Text = "Cancelar";
             this.buttonCancelar.UseVisualStyleBackColor = true;
             this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
@@ -120,20 +126,22 @@
             this.buttonAceptar.Location = new System.Drawing.Point(131, 178);
             this.buttonAceptar.Name = "buttonAceptar";
             this.buttonAceptar.Size = new System.Drawing.Size(80, 23);
-            this.buttonAceptar.TabIndex = 1;
+            this.buttonAceptar.TabIndex = 2;
             this.buttonAceptar.Text = "Aceptar";
             this.buttonAceptar.UseVisualStyleBackColor = true;
             this.buttonAceptar.Click += new System.EventHandler(this.buttonAceptar_Click);
             // 
             // FormLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(300, 208);
             this.Controls.Add(this.buttonAceptar);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.tabControl1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "FormLogin";
             this.Text = "Acceso al sistema";
             this.Load += new System.EventHandler(this.FormLogin_Load);
