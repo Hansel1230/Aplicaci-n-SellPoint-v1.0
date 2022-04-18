@@ -44,11 +44,17 @@
             this.radMenu1 = new Telerik.WinControls.UI.RadMenu();
             this.horaFecha = new System.Windows.Forms.Timer(this.components);
             this.statusBar1 = new System.Windows.Forms.StatusBar();
-            this.statusBarPanel1 = new System.Windows.Forms.StatusBarPanel();
-            this.statusBarPanel2 = new System.Windows.Forms.StatusBarPanel();
+            this.PanelHora = new System.Windows.Forms.StatusBarPanel();
+            this.PanelFecha = new System.Windows.Forms.StatusBarPanel();
+            this.PanelUser = new System.Windows.Forms.StatusBarPanel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.RegistroBtn = new Telerik.WinControls.UI.RadMenuItem();
+            this.radMenuItem9 = new Telerik.WinControls.UI.RadMenuItem();
+            this.radMenuItem10 = new Telerik.WinControls.UI.RadMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.radMenu1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.statusBarPanel1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.statusBarPanel2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PanelHora)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PanelFecha)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PanelUser)).BeginInit();
             this.SuspendLayout();
             // 
             // radMenuItem1
@@ -64,6 +70,8 @@
             // 
             // radMenuItem3
             // 
+            this.radMenuItem3.Items.AddRange(new Telerik.WinControls.RadItem[] {
+            this.RegistroBtn});
             this.radMenuItem3.Name = "radMenuItem3";
             this.radMenuItem3.Text = "Grupos Entidades";
             this.radMenuItem3.Click += new System.EventHandler(this.radMenuItem3_Click_1);
@@ -76,6 +84,8 @@
             // 
             // radMenuItem4
             // 
+            this.radMenuItem4.Items.AddRange(new Telerik.WinControls.RadItem[] {
+            this.radMenuItem9});
             this.radMenuItem4.Name = "radMenuItem4";
             this.radMenuItem4.Text = "Tipos Entidades";
             this.radMenuItem4.Click += new System.EventHandler(this.radMenuItem4_Click_1);
@@ -88,6 +98,8 @@
             // 
             // radMenuItem5
             // 
+            this.radMenuItem5.Items.AddRange(new Telerik.WinControls.RadItem[] {
+            this.radMenuItem10});
             this.radMenuItem5.Name = "radMenuItem5";
             this.radMenuItem5.Text = "Entidades";
             this.radMenuItem5.Click += new System.EventHandler(this.radMenuItem5_Click);
@@ -140,7 +152,7 @@
             this.radMenuItem2});
             this.radMenu1.Location = new System.Drawing.Point(0, 0);
             this.radMenu1.Name = "radMenu1";
-            this.radMenu1.Size = new System.Drawing.Size(587, 20);
+            this.radMenu1.Size = new System.Drawing.Size(616, 20);
             this.radMenu1.TabIndex = 1;
             // 
             // horaFecha
@@ -150,41 +162,75 @@
             // 
             // statusBar1
             // 
-            this.statusBar1.Location = new System.Drawing.Point(0, 468);
+            this.statusBar1.Location = new System.Drawing.Point(0, 463);
             this.statusBar1.Name = "statusBar1";
             this.statusBar1.Panels.AddRange(new System.Windows.Forms.StatusBarPanel[] {
-            this.statusBarPanel1,
-            this.statusBarPanel2});
+            this.PanelHora,
+            this.PanelFecha,
+            this.PanelUser});
+            this.statusBar1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.statusBar1.ShowPanels = true;
-            this.statusBar1.Size = new System.Drawing.Size(587, 24);
+            this.statusBar1.Size = new System.Drawing.Size(616, 24);
             this.statusBar1.TabIndex = 7;
+            this.statusBar1.PanelClick += new System.Windows.Forms.StatusBarPanelClickEventHandler(this.statusBar1_PanelClick);
             // 
-            // statusBarPanel1
+            // PanelHora
             // 
-            this.statusBarPanel1.Name = "statusBarPanel1";
-            this.statusBarPanel1.Text = "statusBarPanel1";
+            this.PanelHora.Name = "PanelHora";
+            this.PanelHora.Text = "statusBarPanel1";
             // 
-            // statusBarPanel2
+            // PanelFecha
             // 
-            this.statusBarPanel2.Name = "statusBarPanel2";
-            this.statusBarPanel2.Text = "statusBarPanel2";
+            this.PanelFecha.Name = "PanelFecha";
+            this.PanelFecha.Text = "statusBarPanel2";
+            // 
+            // PanelUser
+            // 
+            this.PanelUser.Name = "PanelUser";
+            this.PanelUser.Text = "statusBarPanel3";
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(0, 26);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(747, 568);
+            this.panel1.TabIndex = 9;
+            // 
+            // RegistroBtn
+            // 
+            this.RegistroBtn.Name = "RegistroBtn";
+            this.RegistroBtn.Text = "Registro Grupo de Entidades";
+            this.RegistroBtn.Click += new System.EventHandler(this.RegistroBtn_Click);
+            // 
+            // radMenuItem9
+            // 
+            this.radMenuItem9.Name = "radMenuItem9";
+            this.radMenuItem9.Text = "Registro Tipo de Entidades";
+            // 
+            // radMenuItem10
+            // 
+            this.radMenuItem10.Name = "radMenuItem10";
+            this.radMenuItem10.Text = "Registro Entidades";
             // 
             // MDI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(587, 492);
+            this.ClientSize = new System.Drawing.Size(616, 487);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.statusBar1);
             this.Controls.Add(this.radMenu1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.IsMdiContainer = true;
             this.Name = "MDI";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SellPoint v1.0";
             this.Load += new System.EventHandler(this.MDI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.radMenu1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.statusBarPanel1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.statusBarPanel2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PanelHora)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PanelFecha)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PanelUser)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,7 +252,12 @@
         public Telerik.WinControls.UI.RadMenuItem radMenuItem2;
         private System.Windows.Forms.Timer horaFecha;
         private System.Windows.Forms.StatusBar statusBar1;
-        private System.Windows.Forms.StatusBarPanel statusBarPanel1;
-        private System.Windows.Forms.StatusBarPanel statusBarPanel2;
+        private System.Windows.Forms.StatusBarPanel PanelHora;
+        private System.Windows.Forms.StatusBarPanel PanelFecha;
+        private System.Windows.Forms.StatusBarPanel PanelUser;
+        private System.Windows.Forms.Panel panel1;
+        private Telerik.WinControls.UI.RadMenuItem RegistroBtn;
+        private Telerik.WinControls.UI.RadMenuItem radMenuItem9;
+        private Telerik.WinControls.UI.RadMenuItem radMenuItem10;
     }
 }
