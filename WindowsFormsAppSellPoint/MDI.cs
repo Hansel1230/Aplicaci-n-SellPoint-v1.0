@@ -11,11 +11,6 @@ namespace WindowsFormsAppSellPoint
             InitializeComponent();
         }
 
-        private void MDI_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private GrupoEntidades frm;
         private void radMenuItem3_Click_1(object sender, EventArgs e)
         {
@@ -84,16 +79,6 @@ namespace WindowsFormsAppSellPoint
         private void radMenuItem8_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void statusBar1_PanelClick(object sender, StatusBarPanelClickEventArgs e)
-        {
-            //statusBar1.Panels[2].Text = 
-        }
-
-        private void RegistroBtn_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -172,7 +172,6 @@
             this.statusBar1.ShowPanels = true;
             this.statusBar1.Size = new System.Drawing.Size(616, 24);
             this.statusBar1.TabIndex = 7;
-            this.statusBar1.PanelClick += new System.Windows.Forms.StatusBarPanelClickEventHandler(this.statusBar1_PanelClick);
             // 
             // PanelHora
             // 
@@ -200,7 +199,6 @@
             // 
             this.RegistroBtn.Name = "RegistroBtn";
             this.RegistroBtn.Text = "Registro Grupo de Entidades";
-            this.RegistroBtn.Click += new System.EventHandler(this.RegistroBtn_Click);
             // 
             // radMenuItem9
             // 
@@ -226,7 +224,6 @@
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SellPoint v1.0";
-            this.Load += new System.EventHandler(this.MDI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.radMenu1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PanelHora)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PanelFecha)).EndInit();
