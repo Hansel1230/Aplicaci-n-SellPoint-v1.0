@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;  //para usar o DataTable 
 
 namespace Netframework.Layers.ADO.Net.Presentation
 {
@@ -21,4 +22,5 @@ namespace Netframework.Layers.ADO.Net.Presentation
         public string FechaEliminacion { get; set; }
         public string Estado { get; set; }
     }
+    
 }

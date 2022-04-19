@@ -93,6 +93,11 @@
     <Compile Include="TiposEntidades.Designer.cs">
       <DependentUpon>TiposEntidades.cs</DependentUpon>
     </Compile>
+    <Compile Include="_Create_database_SellPoint_DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Create_database_SellPoint_DataSet.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Entidades.resx">
       <DependentUpon>Entidades.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,6 +136,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="_Create_database_SellPoint_DataSet.xsc">
+      <DependentUpon>_Create_database_SellPoint_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_Create_database_SellPoint_DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Create_database_SellPoint_DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Create_database_SellPoint_DataSet.xss">
+      <DependentUpon>_Create_database_SellPoint_DataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

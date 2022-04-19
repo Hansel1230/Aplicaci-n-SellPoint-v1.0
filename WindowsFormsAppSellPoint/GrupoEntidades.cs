@@ -21,5 +21,10 @@ namespace WindowsFormsAppSellPoint
         {
 
         }
+
+        private void radButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

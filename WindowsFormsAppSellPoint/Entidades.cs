@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Diagnostics;
+using System.Threading;
 
 namespace WindowsFormsAppSellPoint
 {
@@ -15,6 +18,11 @@ namespace WindowsFormsAppSellPoint
         public Entidades()
         {
             InitializeComponent();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
