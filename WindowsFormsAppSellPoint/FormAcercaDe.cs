@@ -10,14 +10,24 @@ using System.Windows.Forms;
 
 namespace WindowsFormsAppSellPoint
 {
-    public partial class TiposEntidades : GrupoEntidades
+    public partial class FormAcercaDe : Form
     {
-        public TiposEntidades()
+        public FormAcercaDe()
         {
             InitializeComponent();
         }
 
-        private void TiposEntidades_Load(object sender, EventArgs e)
+        private void FormAcercaDe_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonAtras_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
 
         }
