@@ -36,15 +36,16 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this._Create_database_SellPoint_DataSet = new WindowsFormsAppSellPoint._Create_database_SellPoint_DataSet();
             this.createdatabaseSellPointDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this._Create_database_SellPoint_DataSet = new WindowsFormsAppSellPoint._Create_database_SellPoint_DataSet();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._Create_database_SellPoint_DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.createdatabaseSellPointDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._Create_database_SellPoint_DataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -92,15 +93,15 @@
             this.Column6.HeaderText = "Column6";
             this.Column6.Name = "Column6";
             // 
-            // _Create_database_SellPoint_DataSet
-            // 
-            this._Create_database_SellPoint_DataSet.DataSetName = "_Create_database_SellPoint_DataSet";
-            this._Create_database_SellPoint_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // createdatabaseSellPointDataSetBindingSource
             // 
             this.createdatabaseSellPointDataSetBindingSource.DataSource = this._Create_database_SellPoint_DataSet;
             this.createdatabaseSellPointDataSetBindingSource.Position = 0;
+            // 
+            // _Create_database_SellPoint_DataSet
+            // 
+            this._Create_database_SellPoint_DataSet.DataSetName = "_Create_database_SellPoint_DataSet";
+            this._Create_database_SellPoint_DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // Entidades
             // 
@@ -112,8 +113,8 @@
             this.Name = "Entidades";
             this.Text = "Entidades";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._Create_database_SellPoint_DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.createdatabaseSellPointDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._Create_database_SellPoint_DataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
