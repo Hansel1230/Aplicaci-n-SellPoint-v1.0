@@ -8,6 +8,6 @@ namespace Netframework.Layers.ADO.Net.Data
 {
     public class ConexionDB
     {
-        public static string StringConnection = ConfigurationMananger
+        public static string StringConnection = ConfigurationManange
     }
 }
