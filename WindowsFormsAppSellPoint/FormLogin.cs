@@ -2,7 +2,7 @@
 using System.Windows.Forms;
 using System.Configuration;
 using System.Data.SqlClient;
-
+using System.Threading;
 
 namespace WindowsFormsAppSellPoint
 {
@@ -11,7 +11,14 @@ namespace WindowsFormsAppSellPoint
         #region Constructor
         public FormLogin()
         {
+            Thread t = new Thread(new ThreadStart(SplashStart));
+            t.Start();
+
+            Thread.Sleep(6800);
+
             InitializeComponent();
+
+            t.Abort();
         }
         #endregion
 
@@ -24,6 +31,10 @@ namespace WindowsFormsAppSellPoint
         private void FormLogin_Load(object sender, EventArgs e)
         {
             Fultxt();
+            if (textBoxContrasena.Text != "Ingrese Contraseña")
+            {
+                textBoxContrasena.PasswordChar = '*';
+            }
         }
         private void buttonAceptar_Click(object sender, EventArgs e)
         {
@@ -57,16 +68,41 @@ namespace WindowsFormsAppSellPoint
         }
         private void textBoxContrasena_Click(object sender, EventArgs e)
         {
-            if (textBoxContrasena.Text == "Ingrese Contraseña")
-            {
-                textBoxContrasena.Text = "";
-            }
+            
         }
         private void textBoxContrasena_Leave(object sender, EventArgs e)
         {
             if (textBoxContrasena.Text == "")
             {
+                textBoxContrasena.PasswordChar = '\0';
                 textBoxContrasena.Text = "Ingrese Contraseña";
+            }
+        }
+        private void textBoxContrasena_Enter(object sender, EventArgs e)
+        {
+            if (textBoxContrasena.Text == "Ingrese Contraseña")
+            {
+                textBoxContrasena.Text = "";
+                textBoxContrasena.PasswordChar = '*';
+            }
+
+        }
+        private void pictureBoxMostrar_Click(object sender, EventArgs e)
+        {
+            //Imagen ocultar la mostramos
+            pictureBoxOcultar.BringToFront();
+            //Mostramos la contrasena
+            textBoxContrasena.PasswordChar = '\0';
+        }
+
+        private void pictureBoxOcultar_Click(object sender, EventArgs e)
+        {
+            //Imagen mostrar la mostramos
+            pictureBoxMostrar.BringToFront();
+            //Ocultamos la contrasena
+            if (textBoxContrasena.Text != "Ingrese Contraseña")
+            {
+                textBoxContrasena.PasswordChar = '*';
             }
         }
         #endregion
@@ -109,6 +145,10 @@ namespace WindowsFormsAppSellPoint
             {
                 MessageBox.Show(ex.ToString());
             }
+        }
+        public void SplashStart() 
+        {
+            Application.Run(new FormSplash());
         }
         #endregion
     }

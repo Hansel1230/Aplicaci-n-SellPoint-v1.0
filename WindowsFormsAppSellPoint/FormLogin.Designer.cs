@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageCredenciales = new System.Windows.Forms.TabPage();
             this.textBoxContrasena = new System.Windows.Forms.TextBox();
@@ -36,8 +37,12 @@
             this.labelContrasena = new System.Windows.Forms.Label();
             this.buttonCancelar = new System.Windows.Forms.Button();
             this.buttonAceptar = new System.Windows.Forms.Button();
+            this.pictureBoxOcultar = new System.Windows.Forms.PictureBox();
+            this.pictureBoxMostrar = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tabPageCredenciales.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOcultar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMostrar)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -47,11 +52,13 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(287, 160);
+            this.tabControl1.Size = new System.Drawing.Size(301, 160);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPageCredenciales
             // 
+            this.tabPageCredenciales.Controls.Add(this.pictureBoxMostrar);
+            this.tabPageCredenciales.Controls.Add(this.pictureBoxOcultar);
             this.tabPageCredenciales.Controls.Add(this.textBoxContrasena);
             this.tabPageCredenciales.Controls.Add(this.textBoxUsuario);
             this.tabPageCredenciales.Controls.Add(this.labelUsuario);
@@ -60,7 +67,7 @@
             this.tabPageCredenciales.Location = new System.Drawing.Point(4, 25);
             this.tabPageCredenciales.Name = "tabPageCredenciales";
             this.tabPageCredenciales.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageCredenciales.Size = new System.Drawing.Size(279, 131);
+            this.tabPageCredenciales.Size = new System.Drawing.Size(293, 131);
             this.tabPageCredenciales.TabIndex = 0;
             this.tabPageCredenciales.Text = "Credenciales";
             this.tabPageCredenciales.UseVisualStyleBackColor = true;
@@ -69,16 +76,17 @@
             // 
             this.textBoxContrasena.Location = new System.Drawing.Point(115, 53);
             this.textBoxContrasena.Name = "textBoxContrasena";
-            this.textBoxContrasena.Size = new System.Drawing.Size(158, 22);
+            this.textBoxContrasena.Size = new System.Drawing.Size(141, 22);
             this.textBoxContrasena.TabIndex = 5;
             this.textBoxContrasena.Click += new System.EventHandler(this.textBoxContrasena_Click);
+            this.textBoxContrasena.Enter += new System.EventHandler(this.textBoxContrasena_Enter);
             this.textBoxContrasena.Leave += new System.EventHandler(this.textBoxContrasena_Leave);
             // 
             // textBoxUsuario
             // 
             this.textBoxUsuario.Location = new System.Drawing.Point(115, 18);
             this.textBoxUsuario.Name = "textBoxUsuario";
-            this.textBoxUsuario.Size = new System.Drawing.Size(158, 22);
+            this.textBoxUsuario.Size = new System.Drawing.Size(171, 22);
             this.textBoxUsuario.TabIndex = 4;
             this.textBoxUsuario.Click += new System.EventHandler(this.textBoxUsuario_Click);
             this.textBoxUsuario.Leave += new System.EventHandler(this.textBoxUsuario_Leave);
@@ -125,21 +133,46 @@
             this.buttonAceptar.UseVisualStyleBackColor = true;
             this.buttonAceptar.Click += new System.EventHandler(this.buttonAceptar_Click);
             // 
+            // pictureBoxOcultar
+            // 
+            this.pictureBoxOcultar.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxOcultar.Image")));
+            this.pictureBoxOcultar.Location = new System.Drawing.Point(261, 53);
+            this.pictureBoxOcultar.Name = "pictureBoxOcultar";
+            this.pictureBoxOcultar.Size = new System.Drawing.Size(25, 22);
+            this.pictureBoxOcultar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxOcultar.TabIndex = 6;
+            this.pictureBoxOcultar.TabStop = false;
+            this.pictureBoxOcultar.Click += new System.EventHandler(this.pictureBoxOcultar_Click);
+            // 
+            // pictureBoxMostrar
+            // 
+            this.pictureBoxMostrar.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxMostrar.Image")));
+            this.pictureBoxMostrar.Location = new System.Drawing.Point(261, 53);
+            this.pictureBoxMostrar.Name = "pictureBoxMostrar";
+            this.pictureBoxMostrar.Size = new System.Drawing.Size(25, 22);
+            this.pictureBoxMostrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxMostrar.TabIndex = 7;
+            this.pictureBoxMostrar.TabStop = false;
+            this.pictureBoxMostrar.Click += new System.EventHandler(this.pictureBoxMostrar_Click);
+            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(300, 208);
+            this.ClientSize = new System.Drawing.Size(325, 213);
             this.Controls.Add(this.buttonAceptar);
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "FormLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Acceso al sistema";
             this.Load += new System.EventHandler(this.FormLogin_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPageCredenciales.ResumeLayout(false);
             this.tabPageCredenciales.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOcultar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMostrar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -154,5 +187,7 @@
         private System.Windows.Forms.TextBox textBoxUsuario;
         private System.Windows.Forms.Label labelUsuario;
         private System.Windows.Forms.Label labelContrasena;
+        private System.Windows.Forms.PictureBox pictureBoxMostrar;
+        private System.Windows.Forms.PictureBox pictureBoxOcultar;
     }
 }
