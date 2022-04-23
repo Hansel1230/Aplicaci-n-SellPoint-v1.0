@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSplash));
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.labelName = new System.Windows.Forms.Label();
@@ -38,9 +39,9 @@
             // 
             this.progressBar1.BackColor = System.Drawing.Color.DeepPink;
             this.progressBar1.ForeColor = System.Drawing.Color.DeepPink;
-            this.progressBar1.Location = new System.Drawing.Point(70, 211);
+            this.progressBar1.Location = new System.Drawing.Point(114, 323);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(284, 10);
+            this.progressBar1.Size = new System.Drawing.Size(207, 10);
             this.progressBar1.TabIndex = 0;
             // 
             // timer1
@@ -64,17 +65,19 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.BackgroundImage = global::WindowsFormsAppSellPoint.Properties.Resources.Splashbien_removebg_preview;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BackColor = System.Drawing.Color.Gray;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(429, 392);
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.progressBar1);
             this.DoubleBuffered = true;
+            this.ForeColor = System.Drawing.Color.Gray;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormSplash";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormSplash";
+            this.TransparencyKey = System.Drawing.Color.Gray;
             this.ResumeLayout(false);
             this.PerformLayout();
 
