@@ -63,9 +63,19 @@ namespace WindowsFormsAppSellPoint.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap aceptado {
+        internal static System.Drawing.Bitmap Splash {
             get {
-                object obj = ResourceManager.GetObject("aceptado", resourceCulture);
+                object obj = ResourceManager.GetObject("Splash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Splashbien_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Splashbien-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

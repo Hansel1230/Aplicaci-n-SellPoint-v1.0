@@ -189,6 +189,7 @@
             this.IsMdiContainer = true;
             this.Name = "MDI";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SellPoint v1.0";
             this.Load += new System.EventHandler(this.MDI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.radMenu1)).EndInit();
