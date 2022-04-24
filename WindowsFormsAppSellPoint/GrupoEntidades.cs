@@ -22,10 +22,16 @@ namespace WindowsFormsAppSellPoint
             this.Close();
         }
 
+        private Agregar add;
         private void radButton1_Click(object sender, EventArgs e)
         {
-            Agregar add = new Agregar();
+            if (add == null)
+            {
+                add = new Agregar();
+                add.FormClosed += (o, args) => add = null;
+            }
             add.Show();
+            add.BringToFront();
         }
     }
 }
