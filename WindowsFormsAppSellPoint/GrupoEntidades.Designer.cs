@@ -157,16 +157,13 @@
             this.Name = "GrupoEntidades";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Grupo Entidades";
-            this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CerrarBtn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MdoficarBtn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EliminarBtn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.AgregarBtn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BuscarBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radGridView1.MasterTemplate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radButton4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radTextBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
