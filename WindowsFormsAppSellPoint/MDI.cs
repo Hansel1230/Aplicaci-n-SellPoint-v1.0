@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace WindowsFormsAppSellPoint
@@ -10,17 +11,32 @@ namespace WindowsFormsAppSellPoint
             InitializeComponent();
         }
 
-        private void MDI_Load(object sender, EventArgs e)
-        {
-
-        }
-
+        private GrupoEntidades frm;
         private void radMenuItem3_Click_1(object sender, EventArgs e)
         {
-            GrupoEntidades Gentidades = new GrupoEntidades();
-            Gentidades.label1.Text = "Grupo Entidades";
-            Gentidades.Show();
+            if (frm == null)
+            {
+                frm = new GrupoEntidades();
+                frm.FormClosed += (o, args) => frm = null;
+            }
+            //Codigo para agregar el formulario en el mismo formulario.
+            //frm.TopLevel = false;
+            //panel1.Controls.Add(frm);
+            frm.Show();
+            frm.label1.Text = "Grupo Entidades";
+            frm.BringToFront();
+
         }
+
+        private Entidades frm2;
+        private void radMenuItem4_Click_1(object sender, EventArgs e)
+        {
+            if (frm2 == null)
+            {
+                frm2 = new Entidades();
+                frm2.FormClosed += (o, args) => frm2 = null;
+            }
+            //Codigo para agregar el formulario en el mismo formulario.
 
         private void radMenuItem4_Click_1(object sender, EventArgs e)
         {
@@ -29,6 +45,7 @@ namespace WindowsFormsAppSellPoint
             Tentidades.Show();
         }
 
+        private TiposEntidades frm3;
         private void radMenuItem5_Click(object sender, EventArgs e)
         {
             Entidades entidades = new Entidades();
