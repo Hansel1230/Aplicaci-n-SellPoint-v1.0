@@ -10,30 +10,43 @@ namespace WindowsFormsAppSellPoint
             InitializeComponent();
         }
 
-        private void MDI_Load(object sender, EventArgs e)
-        {
-
-        }
-
+        private GrupoEntidades frm1;
         private void radMenuItem3_Click_1(object sender, EventArgs e)
         {
-            GrupoEntidades Gentidades = new GrupoEntidades();
-            Gentidades.label1.Text = "Grupo Entidades";
-            Gentidades.Show();
+            if (frm1 == null)
+            {
+                frm1 = new GrupoEntidades();
+                frm1.FormClosed += (o, args) => frm1 = null;
+            }
+            frm1.Show();
+            frm1.label1.Text = "Grupo Entidades";
+            frm1.BringToFront();
         }
 
+        private TiposEntidades frm2;
         private void radMenuItem4_Click_1(object sender, EventArgs e)
         {
-            GrupoEntidades Gentidades = new GrupoEntidades();
-            Gentidades.label1.Text = "Tipo Entidades";
-            Gentidades.Show();
+            if (frm2 == null)
+            {
+                frm2 = new TiposEntidades();
+                frm2.FormClosed += (o, args) => frm3 = null;
+            }
+            frm2.Show();
+            frm2.label1.Text = "Tipos Entidades";
+            frm2.BringToFront();
         }
 
+        private Entidades frm3;
         private void radMenuItem5_Click(object sender, EventArgs e)
         {
-            GrupoEntidades Gentidades = new GrupoEntidades();
-            Gentidades.label1.Text = "Entidades";
-            Gentidades.Show();
+            if (frm3 == null)
+            {
+                frm3 = new Entidades();
+                frm3.FormClosed += (o, args) => frm3 = null;
+            }
+            frm3.Show();
+            frm3.label1.Text = "Entidades";
+            frm3.BringToFront();
         }
 
         private void radMenuItem7_Click(object sender, EventArgs e)
