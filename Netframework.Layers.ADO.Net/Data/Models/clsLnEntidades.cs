@@ -1,98 +1,83 @@
 using BE;
 using Netframework.Layers.ADO.Net.Data.Models;
-using System.Data.SqlClient;
-using System.Data;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System;
+using System.Data.SqlClient;
+using System.Data;
+using 
 
 public class clsLnEntidades
 {
 
 	private ConnectionManager oConexion = null;
 
-    public void Cargar(ref clsBeEntidades oBeEntidades, ref DataRow dr)
-    {
-        try
-        {
-            oBeEntidades.IdEntidad = Convert.ToInt32(dr["IdEntidad"].ToString());
-            oBeEntidades.Descripcion = string.IsNullOrEmpty(dr["Descripcion"].ToString()) == true ? "" : dr["Descripcion"].ToString();
-	 public clsLnEntidades(ConnectionManager oConexion) {
-		try {
-			this.oConexion = oConexion;
-		}
-		catch (Exception ex) {
-			throw ex;
-		}
-	}
+	public void Cargar(ref clsBeEntidades oBeEntidades, ref DataRow dr)
+	{
+
+		oBeEntidades.IdEntidad = Convert.ToInt32(dr["id_entidad"].ToString());
+		oBeEntidades.Descripcion = string.IsNullOrEmpty(dr["descripcion"].ToString()) == ? true : dr["descripcion"].ToString();
+		oBeEntidades.Direccion = string.IsNullOrEmpty(dr["Direccion"].ToString()) == ? true dr.["Direccion"].ToString();
+		oBeEntidades.Localidad = string.IsNullOrEmpty(dr["Localidad"].ToString()) == ? true dr.["Localidad"].ToString();
 
 
+		oBeEntidades.TipoEntidad = string.IsNullOrEmpty(dr["TipoEntidad"].ToString()) == ? true : dr.["TipoEntidad"].ToString();
 
 
-            oBeEntidades.Direccion = string.IsNullOrEmpty(dr["Direccion"]) ? "" : dr.["Direccion"].ToString();
+		oBeEntidades.TipoDocumento = string.IsNullOrEmpty(dr["TipoDocumento"].ToString()) == ? true : dr.["TipoDocumento"].ToString();
 
 
-            oBeEntidades.Localidad = string.IsNullOrEmpty(dr["Localidad"]) ? "" : dr.["Localidad"].ToString();
+		oBeEntidades.NumeroDocumento = string.IsNullOrEmpty(dr["NumeroDocumento"] ? 0 : dr["NumeroDocumento"].ToString();
 
 
-            oBeEntidades.TipoEntidad = string.IsNullOrEmpty(dr["TipoEntidad"]) ? "" : dr.["TipoEntidad"].ToString();
+		oBeEntidades.Teléfonos = string.IsNullOrEmpty(dr["Teléfonos"].ToString()) == ? true : dr.["Teléfonos"].ToString();
 
 
-            oBeEntidades.TipoDocumento = string.IsNullOrEmpty(dr["TipoDocumento"]) ? "" : dr.["TipoDocumento"].ToString();
+		oBeEntidades.URLPaginaWeb = string.IsNullOrEmpty(dr["URLPaginaWeb"].ToString()) == ? true : dr["URLPaginaWeb"].ToString();
 
 
-            oBeEntidades.NumeroDocumento = string.IsNullOrEmpty(dr["NumeroDocumento"]) ? 0 : dr["NumeroDocumento"].ToString();
+		oBeEntidades.URLFacebook = string.IsNullOrEmpty(dr["URLFacebook"].ToString()) == ? true : dr.["URLFacebook"].ToString();
 
 
-            oBeEntidades.Teléfonos = string.IsNullOrEmpty(dr["Teléfonos"]) ? "" : dr.["Teléfonos"].ToString();
+		oBeEntidades.URLInstagram = string.IsNullOrEmpty(dr["URLInstagram"].ToString()) == ? true : dr.["URLInstagram"].ToString();
 
 
-            oBeEntidades.URLPaginaWeb = string.IsNullOrEmpty(dr["URLPaginaWeb"]) ? "" : dr["URLPaginaWeb"].ToString();
+		oBeEntidades.URLTwitter = string.IsNullOrEmpty(dr["URLTwitter"].ToString()) == ? true : dr.["URLTwitter"].ToString();
 
 
-            oBeEntidades.URLFacebook = string.IsNullOrEmpty(dr["URLFacebook"]) ? "" : dr.["URLFacebook"].ToString();
+		oBeEntidades.URLTikTok = string.IsNullOrEmpty(dr["URLTikTok"].ToString()) == ? true : dr.["URLTikTok"].ToString();
 
 
-            oBeEntidades.URLInstagram = string.IsNullOrEmpty(dr["URLInstagram"]) ? "" : dr.["URLInstagram"].ToString();
+		oBeEntidades.IdGrupoEntidad = string.IsNullOrEmpty(dr["IdGrupoEntidad"] ? 0 : dr.["IdGrupoEntidad"].ToString();
 
 
-            oBeEntidades.URLTwitter = string.IsNullOrEmpty(dr["URLTwitter"]) ? "" : dr.["URLTwitter"].ToString();
+		oBeEntidades.IdTipoEntidad = string.IsNullOrEmpty(dr["IdTipoEntidad"] ? 0 : dr.["IdTipoEntidad"].ToString();
 
 
-            oBeEntidades.URLTikTok = string.IsNullOrEmpty(dr["URLTikTok"]) ? "" : dr.["URLTikTok"].ToString();
+		oBeEntidades.LimiteCredito = string.IsNullOrEmpty(dr["LimiteCredito"] ? 0 : dr.["LimiteCredito"].ToString();
 
 
-            oBeEntidades.IdGrupoEntidad = string.IsNullOrEmpty(dr["IdGrupoEntidad"]) ? 0 : dr.["IdGrupoEntidad"].ToString();
+		oBeEntidades.UserNameEntidad = string.IsNullOrEmpty(dr["UserNameEntidad"].ToString()) == ? true : dr.["UserNameEntidad"].ToString();
 
 
-            oBeEntidades.IdTipoEntidad = string.IsNullOrEmpty(dr["IdTipoEntidad"]) ? 0 : dr.["IdTipoEntidad"].ToString();
+		oBeEntidades.PassworEntidad = string.IsNullOrEmpty(dr["PassworEntidad"]).ToString())== ? true : dr.["PassworEntidad"].ToString();
 
 
-            oBeEntidades.LimiteCredito = string.IsNullOrEmpty(dr["LimiteCredito"]) ? 0 : dr.["LimiteCredito"].ToString();
+		oBeEntidades.RolUserEntidad = string.IsNullOrEmpty(dr["RolUserEntidad"]).ToString())== ? true : dr.["RolUserEntidad"].ToString();
 
 
-            oBeEntidades.UserNameEntidad = string.IsNullOrEmpty(dr["UserNameEntidad"]) ? "" : dr.["UserNameEntidad"].ToString();
+		oBeEntidades.Comentario = string.IsNullOrEmpty(dr["Comentario"]).ToString())== ? true : dr.["Comentario"].ToString();
 
 
-            oBeEntidades.PassworEntidad = string.IsNullOrEmpty(dr["PassworEntidad"]) ? "" : dr.["PassworEntidad"].ToString();
+		oBeEntidades.Statuss = string.IsNullOrEmpty(dr["Statuss"]).ToString())== ? true : dr.["Statuss"].ToString();
 
 
-            oBeEntidades.RolUserEntidad = string.IsNullOrEmpty(dr["RolUserEntidad"]) ? "" : dr.["RolUserEntidad"].ToString();
+		oBeEntidades.NoEliminable = Convert.ToDateTime(dr["NoEliminable"]) ? False : dr.["NoEliminable"].ToString();
 
 
-            oBeEntidades.Comentario = string.IsNullOrEmpty(dr["Comentario"]) ? "" : dr.["Comentario"].ToString();
+		oBeEntidades.FechaRegistro = string.IsNullOrEmpty(dr["FechaRegistro"]) ?  : dr.["FechaRegistro"].ToString();
 
-
-            oBeEntidades.Statuss = string.IsNullOrEmpty(dr["Statuss"]) ? "" : dr.["Statuss"].ToString();
-
-
-            oBeEntidades.NoEliminable = string.IsNullOrEmpty(dr["NoEliminable"]) ? False : dr.["NoEliminable"].ToString();
-
-
-            oBeEntidades.FechaRegistro = string.IsNullOrEmpty(dr["FechaRegistro"]) ?  : dr.["FechaRegistro"].ToString();
-
-
+	
 
 
         catch (Exception ex)
@@ -489,4 +474,8 @@ public bool Anterior(ref clsBeEntidades oBeEntidades)
 		}
 	}
 
+}
+
+internal class ConnectionManager
+{
 }
