@@ -28,7 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // radButton1
+            // 
+            this.radButton1.Click += new System.EventHandler(this.radButton1_Click);
             // 
             // TiposEntidades
             // 
@@ -38,6 +43,7 @@
             this.Name = "TiposEntidades";
             this.Text = "Tipos Entidades";
             this.Load += new System.EventHandler(this.TiposEntidades_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

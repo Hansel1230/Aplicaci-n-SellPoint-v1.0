@@ -77,7 +77,7 @@
             // pictureBoxMostrar
             // 
             this.pictureBoxMostrar.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxMostrar.Image")));
-            this.pictureBoxMostrar.Location = new System.Drawing.Point(275, 52);
+            this.pictureBoxMostrar.Location = new System.Drawing.Point(261, 53);
             this.pictureBoxMostrar.Name = "pictureBoxMostrar";
             this.pictureBoxMostrar.Size = new System.Drawing.Size(25, 22);
             this.pictureBoxMostrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -88,7 +88,7 @@
             // pictureBoxOcultar
             // 
             this.pictureBoxOcultar.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxOcultar.Image")));
-            this.pictureBoxOcultar.Location = new System.Drawing.Point(275, 52);
+            this.pictureBoxOcultar.Location = new System.Drawing.Point(261, 53);
             this.pictureBoxOcultar.Name = "pictureBoxOcultar";
             this.pictureBoxOcultar.Size = new System.Drawing.Size(25, 22);
             this.pictureBoxOcultar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -170,11 +170,15 @@
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "FormLogin";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Acceso al sistema";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.FormLogin_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPageCredenciales.ResumeLayout(false);

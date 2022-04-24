@@ -28,7 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // radButton1
+            // 
+            this.radButton1.Click += new System.EventHandler(this.radButton1_Click);
             // 
             // Entidades
             // 
@@ -38,6 +43,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Entidades";
             this.Text = "Entidades";
+            this.Load += new System.EventHandler(this.Entidades_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

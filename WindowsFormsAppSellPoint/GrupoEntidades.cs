@@ -21,5 +21,11 @@ namespace WindowsFormsAppSellPoint
         {
 
         }
+
+        private void radButton1_Click(object sender, EventArgs e)
+        {
+            Agregar add = new Agregar();
+            add.Show();
+        }
     }
 }
