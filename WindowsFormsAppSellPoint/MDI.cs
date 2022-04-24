@@ -24,16 +24,16 @@ namespace WindowsFormsAppSellPoint
 
         private void radMenuItem4_Click_1(object sender, EventArgs e)
         {
-            GrupoEntidades Gentidades = new GrupoEntidades();
-            Gentidades.label1.Text = "Tipo Entidades";
-            Gentidades.Show();
+            TiposEntidades Tentidades = new TiposEntidades();
+            Tentidades.label1.Text = "Tipo Entidades";
+            Tentidades.Show();
         }
 
         private void radMenuItem5_Click(object sender, EventArgs e)
         {
-            GrupoEntidades Gentidades = new GrupoEntidades();
-            Gentidades.label1.Text = "Entidades";
-            Gentidades.Show();
+            Entidades entidades = new Entidades();
+            entidades.label1.Text = "Entidades";
+            entidades.Show();
         }
 
         private void radMenuItem7_Click(object sender, EventArgs e)

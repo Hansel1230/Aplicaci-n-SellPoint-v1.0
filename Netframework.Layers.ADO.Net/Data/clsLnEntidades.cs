@@ -1,6 +1,7 @@
 using Netframework.Layers.ADO.Net.Data.Models;
 using System.Data;
 using System.Data.SqlClient;
+using System.Configuration;
 
 public class clsLnEntidades
 {
@@ -225,139 +226,6 @@ public class clsLnEntidades
         }
     }
 
-    public bool Primero(ref clsBeEntidades oBeEntidades)
-    {
-        Try
-
-            string sp = "SpEntidadesPrimero";
-
-        SqlConnection cnn = new SqlConnection(oConexion.ConexionLocal);
-        SqlCommand cmd = new SqlCommand(sp, cnn);
-        cmd.CommandType = CommandType.StoredProcedure;
-
-        SqlDataAdapter dad = new SqlDataAdapter(cmd);
-
-        DataTable dt = new DataTable();
-        dad.Fill(dt);
-
-        if ((dt.Rows.Count == 1))
-        {
-            Cargar(oBeEntidades, dt.Rows[0]);
-        }
-        else
-        {
-            throw new Exception("No se pudo obtener el primer registro");
-        }
-
-        return true;
-    }
-		catch (Exception ex) {
-			throw ex;
-		}
-	}
-
-	public bool Primero(ref clsBeEntidades oBeEntidades)
-{
-    try
-    {
-        string sp = "SpEntidadesUltimo";
-
-        SqlConnection cnn = new SqlConnection(oConexion.ConexionLocal);
-        SqlCommand cmd = new SqlCommand(sp, cnn);
-        cmd.CommandType = CommandType.StoredProcedure;
-
-        SqlDataAdapter dad = new SqlDataAdapter(cmd);
-
-        DataTable dt = new DataTable();
-        dad.Fill(dt);
-
-        if ((dt.Rows.Count == 1))
-        {
-            Cargar(oBeEntidades, dt.Rows[0]);
-        }
-        else
-        {
-            throw new Exception("No se pudo obtener el primer registro");
-        }
-
-        return true;
-    }
-    catch (Exception ex)
-    {
-        throw ex;
-    }
-}
-
-public bool Anterior(ref clsBeEntidades oBeEntidades)
-{
-    Try
-
-            string sp = "SpEntidadesAnterior";
-
-    SqlConnection cnn = new SqlConnection(oConexion.ConexionLocal);
-    SqlCommand cmd = new SqlCommand(sp, cnn);
-    cmd.CommandType = CommandType.StoredProcedure;
-
-    SqlDataAdapter dad = new SqlDataAdapter(cmd);
-    dad.SelectCommand.Parameters.Add(new SqlClient.SqlParameter("@IDENTIDAD", oBeEntidades.IdEntidad));
-
-    DataTable dt = new DataTable();
-    dad.Fill(dt);
-
-    if ((dt.Rows.Count == 1))
-    {
-        Cargar(oBeEntidades, dt.Rows[0]);
-    }
-    else
-    {
-        throw new Exception("No se pudo obtener el anterior registro");
-        End If
-
-            }
-
-    return true;
-}
-
-        catch (Exception ex)
-{
-    throw ex;
-}
-	}
-
-	public bool Siguiente(ref clsBeEntidades oBeEntidades)
-{
-    Try
-
-            string sp = "SpEntidadesSiguiente";
-
-    SqlConnection cnn = new SqlConnection(oConexion.ConexionLocal);
-    SqlCommand cmd = new SqlCommand(sp, cnn);
-    cmd.CommandType = CommandType.StoredProcedure;
-
-    SqlDataAdapter dad = new SqlDataAdapter(cmd);
-    dad.SelectCommand.Parameters.Add(new SqlClient.SqlParameter("@IDENTIDAD", oBeEntidades.IdEntidad));
-
-    DataTable dt = new DataTable();
-    dad.Fill(dt);
-
-    if ((dt.Rows.Count == 1))
-    {
-        Cargar(oBeEntidades, dt.Rows[0]);
-    }
-    else
-    {
-        throw new Exception("No se pudo obtener el siguiente registro");
-        End If
-
-            }
-
-    return true;
-}
-
-        catch (Exception ex)
-{
-    throw ex;
-}
-	}
+   
 
 }

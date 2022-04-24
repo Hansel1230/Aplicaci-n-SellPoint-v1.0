@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsAppSellPoint
 {
-    public partial class Entidades : Form
+    public partial class Entidades : GrupoEntidades
     {
         public Entidades()
         {
