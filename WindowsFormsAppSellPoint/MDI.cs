@@ -29,14 +29,14 @@ namespace WindowsFormsAppSellPoint
         }
 
         private Entidades frm2;
-        private void radMenuItem4_Click_1(object sender, EventArgs e)
+        /*private void radMenuItem4_Click_1(object sender, EventArgs e)
         {
             if (frm2 == null)
             {
                 frm2 = new Entidades();
                 frm2.FormClosed += (o, args) => frm2 = null;
             }
-            //Codigo para agregar el formulario en el mismo formulario.
+            //Codigo para agregar el formulario en el mismo formulario.*/
 
         private void radMenuItem4_Click_1(object sender, EventArgs e)
         {
