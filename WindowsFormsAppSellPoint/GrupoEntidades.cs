@@ -17,15 +17,11 @@ namespace WindowsFormsAppSellPoint
             InitializeComponent();
         }
 
-        private void CerrarBtn_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void radButton1_Click(object sender, EventArgs e)
         {
             Agregar add = new Agregar();
             add.Show();
+            //prueba
         }
     }
 }
