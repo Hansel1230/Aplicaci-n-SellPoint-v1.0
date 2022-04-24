@@ -17,15 +17,11 @@ namespace WindowsFormsAppSellPoint
             InitializeComponent();
         }
 
-        private void GrupoEntidades_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void radButton1_Click(object sender, EventArgs e)
         {
             Agregar add = new Agregar();
             add.Show();
+            //prueba
         }
     }
 }
