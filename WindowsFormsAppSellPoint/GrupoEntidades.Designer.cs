@@ -123,7 +123,6 @@
             this.Name = "GrupoEntidades";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Grupo Entidades";
-            this.Load += new System.EventHandler(this.GrupoEntidades_Load);
             ((System.ComponentModel.ISupportInitialize)(this.radGridView1.MasterTemplate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
