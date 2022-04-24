@@ -10,22 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsAppSellPoint
 {
-    public partial class Entidades : GrupoEntidades
+    public partial class Agregar : Form
     {
-        public Entidades()
+        public Agregar()
         {
             InitializeComponent();
-        }
-
-        private void Entidades_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radButton1_Click(object sender, EventArgs e)
-        {
-            Agregar add = new Agregar();
-            add.Show();
         }
     }
 }

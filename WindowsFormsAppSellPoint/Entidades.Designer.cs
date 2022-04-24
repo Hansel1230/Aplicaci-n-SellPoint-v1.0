@@ -28,17 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // radButton1
+            // 
+            this.radButton1.Click += new System.EventHandler(this.radButton1_Click);
             // 
             // Entidades
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(479, 445);
+            this.ClientSize = new System.Drawing.Size(673, 457);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Entidades";
             this.Text = "Entidades";
+            this.Load += new System.EventHandler(this.Entidades_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

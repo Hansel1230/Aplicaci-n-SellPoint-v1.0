@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Configuration;
+﻿using System.Configuration;
+
+
 namespace Netframework.Layers.ADO.Net.Data
 {
     public class ConexionDB
     {
-        public static string StringConnection = ConfigurationManan
+        public static string StringConnection = ConfigurationMananer.ConnectionString["DBConnection"].ConnectionString;
+
     }
 }

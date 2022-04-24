@@ -31,18 +31,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLogin));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageCredenciales = new System.Windows.Forms.TabPage();
+            this.pictureBoxMostrar = new System.Windows.Forms.PictureBox();
+            this.pictureBoxOcultar = new System.Windows.Forms.PictureBox();
             this.textBoxContrasena = new System.Windows.Forms.TextBox();
             this.textBoxUsuario = new System.Windows.Forms.TextBox();
             this.labelUsuario = new System.Windows.Forms.Label();
             this.labelContrasena = new System.Windows.Forms.Label();
             this.buttonCancelar = new System.Windows.Forms.Button();
             this.buttonAceptar = new System.Windows.Forms.Button();
-            this.pictureBoxOcultar = new System.Windows.Forms.PictureBox();
-            this.pictureBoxMostrar = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tabPageCredenciales.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOcultar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMostrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOcultar)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -73,6 +73,28 @@
             this.tabPageCredenciales.TabIndex = 0;
             this.tabPageCredenciales.Text = "Credenciales";
             this.tabPageCredenciales.UseVisualStyleBackColor = true;
+            // 
+            // pictureBoxMostrar
+            // 
+            this.pictureBoxMostrar.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxMostrar.Image")));
+            this.pictureBoxMostrar.Location = new System.Drawing.Point(261, 53);
+            this.pictureBoxMostrar.Name = "pictureBoxMostrar";
+            this.pictureBoxMostrar.Size = new System.Drawing.Size(25, 22);
+            this.pictureBoxMostrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxMostrar.TabIndex = 7;
+            this.pictureBoxMostrar.TabStop = false;
+            this.pictureBoxMostrar.Click += new System.EventHandler(this.pictureBoxMostrar_Click);
+            // 
+            // pictureBoxOcultar
+            // 
+            this.pictureBoxOcultar.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxOcultar.Image")));
+            this.pictureBoxOcultar.Location = new System.Drawing.Point(261, 53);
+            this.pictureBoxOcultar.Name = "pictureBoxOcultar";
+            this.pictureBoxOcultar.Size = new System.Drawing.Size(25, 22);
+            this.pictureBoxOcultar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxOcultar.TabIndex = 6;
+            this.pictureBoxOcultar.TabStop = false;
+            this.pictureBoxOcultar.Click += new System.EventHandler(this.pictureBoxOcultar_Click);
             // 
             // textBoxContrasena
             // 
@@ -139,28 +161,6 @@
             this.buttonAceptar.UseVisualStyleBackColor = true;
             this.buttonAceptar.Click += new System.EventHandler(this.buttonAceptar_Click);
             // 
-            // pictureBoxOcultar
-            // 
-            this.pictureBoxOcultar.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxOcultar.Image")));
-            this.pictureBoxOcultar.Location = new System.Drawing.Point(261, 53);
-            this.pictureBoxOcultar.Name = "pictureBoxOcultar";
-            this.pictureBoxOcultar.Size = new System.Drawing.Size(25, 22);
-            this.pictureBoxOcultar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxOcultar.TabIndex = 6;
-            this.pictureBoxOcultar.TabStop = false;
-            this.pictureBoxOcultar.Click += new System.EventHandler(this.pictureBoxOcultar_Click);
-            // 
-            // pictureBoxMostrar
-            // 
-            this.pictureBoxMostrar.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxMostrar.Image")));
-            this.pictureBoxMostrar.Location = new System.Drawing.Point(261, 53);
-            this.pictureBoxMostrar.Name = "pictureBoxMostrar";
-            this.pictureBoxMostrar.Size = new System.Drawing.Size(25, 22);
-            this.pictureBoxMostrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxMostrar.TabIndex = 7;
-            this.pictureBoxMostrar.TabStop = false;
-            this.pictureBoxMostrar.Click += new System.EventHandler(this.pictureBoxMostrar_Click);
-            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
@@ -170,17 +170,21 @@
             this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "FormLogin";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Acceso al sistema";
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.FormLogin_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPageCredenciales.ResumeLayout(false);
             this.tabPageCredenciales.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOcultar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMostrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxOcultar)).EndInit();
             this.ResumeLayout(false);
 
         }
