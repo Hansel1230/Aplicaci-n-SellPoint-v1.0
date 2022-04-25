@@ -1,8 +1,8 @@
 ﻿using System;
-using System.Windows.Forms;
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Threading;
+using System.Windows.Forms;
 
 namespace WindowsFormsAppSellPoint
 {
@@ -24,7 +24,7 @@ namespace WindowsFormsAppSellPoint
 
         #region Propiedades
         public static bool UserValid { get; set; } = false;
-        public static string UserName { get; set; } 
+        public static string UserName { get; set; }
         #endregion
 
         #region Eventos
@@ -46,7 +46,7 @@ namespace WindowsFormsAppSellPoint
             {
                 logins();
             }
-            
+
         }
         private void buttonCancelar_Click(object sender, EventArgs e)
         {
@@ -68,7 +68,7 @@ namespace WindowsFormsAppSellPoint
         }
         private void textBoxContrasena_Click(object sender, EventArgs e)
         {
-            
+
         }
         private void textBoxContrasena_Leave(object sender, EventArgs e)
         {
@@ -126,9 +126,9 @@ namespace WindowsFormsAppSellPoint
                         SqlDataReader dr = cmd.ExecuteReader();
                         if (dr.Read())
                         {
-                            MessageBox.Show("Login exitoso.");
+                            MessageBox.Show("Bienvenido " + textBoxUsuario.Text);
                             UserName = textBoxUsuario.Text;
-                            UserValid= true;
+                            UserValid = true;
                             this.Close();
                         }
                         else
@@ -146,7 +146,7 @@ namespace WindowsFormsAppSellPoint
                 MessageBox.Show(ex.ToString());
             }
         }
-        public void SplashStart() 
+        public void SplashStart()
         {
             Application.Run(new FormSplash());
         }

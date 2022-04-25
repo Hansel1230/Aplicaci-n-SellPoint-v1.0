@@ -1,19 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ProyectoEntidades;
+using System;
 using System.Windows.Forms;
-using ProyectoEntidades;
 
 namespace WindowsFormsAppSellPoint
 {
     public partial class Agregar : Form
     {
-        public bool isValid { get; set; }=true;
+        public bool isValid { get; set; } = true;
         clsBeEntidades beEntidades = new clsBeEntidades();
         Entidades entidades = new Entidades();
         clsLnEntidades daEntidades = new clsLnEntidades();
@@ -24,14 +17,13 @@ namespace WindowsFormsAppSellPoint
         #region Metodos
         public void FullCombobox()
         {
-            comboBoxTipoEntidad.SelectedItem = 0;  
+            comboBoxTipoEntidad.SelectedItem = 0;
             comboBoxTipoDoc.SelectedIndex = 0;
-            comboBoxGrupoEntidad.SelectedIndex = 0;
             comboBoxRolUsuario.SelectedIndex = 0;
             comboBoxEstatus.SelectedIndex = 0;
-            comboBoxEliminable.SelectedIndex = 1;                
+            comboBoxEliminable.SelectedIndex = 1;
         }
-        public void AddValid() 
+        public void AddValid()
         {
             if (comboBoxTipoEntidad.SelectedItem == null)
             {
@@ -78,24 +70,33 @@ namespace WindowsFormsAppSellPoint
                 isValid = false;
                 MessageBox.Show("Debe seleccinar si es eliminable o no!!");
             }
-            else { isValid = true;  }
+            else { isValid = true; }
         }
-        
-        public void insertar() 
+
+        public void insertar()
         {
+
+            try
+            {
+                beEntidades.NumeroDocumento = Convert.ToInt32(TextBoxNoDoc.Text);
+                beEntidades.Teléfonos = Convert.ToString(TextBoxTelefono.Text);
+                beEntidades.LimiteCredito = Convert.ToInt32(TextBoxLimiteCredito.Text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Insertar solo numeros por favor");
+            }
             beEntidades.TipoEntidad = Convert.ToString(comboBoxTipoEntidad.SelectedValue);
-            beEntidades.NumeroDocumento = Convert.ToInt32(TextBoxNoDoc.Text);
-            beEntidades.Teléfonos = Convert.ToString(TextBoxTelefono.Text);
-            beEntidades.IdGrupoEntidad = Convert.ToInt32(comboBoxGrupoEntidad.SelectedValue);
+
             beEntidades.UserNameEntidad = Convert.ToString(TextBoxNombreUsuario.Text);
             beEntidades.PassworEntidad = Convert.ToString(TextBoxContrasena.Text);
-            beEntidades.RolUserEntidad= Convert.ToString(comboBoxTipoEntidad.SelectedItem);
+            beEntidades.RolUserEntidad = Convert.ToString(comboBoxTipoEntidad.SelectedItem);
             beEntidades.Statuss = Convert.ToString(comboBoxEstatus.SelectedItem);
-            if (comboBoxEliminable.SelectedIndex == 0) 
+            if (comboBoxEliminable.SelectedIndex == 0)
             {
                 beEntidades.NoEliminable = true;
             }
-            else 
+            else
             {
                 beEntidades.NoEliminable = false;
             }
@@ -107,15 +108,14 @@ namespace WindowsFormsAppSellPoint
             beEntidades.URLInstagram = Convert.ToString(TextBoxURL_Istagram.Text);
             beEntidades.URLTwitter = Convert.ToString(TextBoxURL_Twiter.Text);
             beEntidades.URLTikTok = Convert.ToString(TextBoxURL_Tiktok.Text);
-            beEntidades.LimiteCredito = Convert.ToInt32(TextBoxLimiteCredito.Text);
             beEntidades.Comentario = Convert.ToString(TextEditorComentario.Text);
             daEntidades.Insertar(ref beEntidades);
+
         }
-        public void VaciarData() 
+        public void VaciarData()
         {
             comboBoxTipoEntidad.SelectedItem = null;
             comboBoxTipoDoc.SelectedItem = null;
-            comboBoxGrupoEntidad.SelectedItem = null;
             comboBoxRolUsuario.SelectedItem = null;
             comboBoxEstatus.SelectedItem = null;
             comboBoxEliminable.SelectedItem = null;
@@ -133,7 +133,7 @@ namespace WindowsFormsAppSellPoint
             TextBoxURL_Tiktok.Text = "";
             TextBoxURL_Twiter.Text = "";
             TextBoxURL_Web.Text = "";
-            
+
 
         }
         #endregion
@@ -142,9 +142,10 @@ namespace WindowsFormsAppSellPoint
         private void ButtonAceptar_Click(object sender, EventArgs e)
         {
             AddValid();
-            if (isValid == true) 
+            if (isValid == true)
             {
                 insertar();
+                MessageBox.Show("Registro Exitoso!");
                 this.Close();
                 entidades.CargarData();
                 VaciarData();
@@ -156,11 +157,35 @@ namespace WindowsFormsAppSellPoint
             this.Close();
         }
 
+
         #endregion
 
-        private void TextBoxLimiteCredito_TextChanged(object sender, EventArgs e)
-        {
 
+        private void TextBoxTelefono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+               (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void TextBoxNoDoc_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+               (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void TextBoxLimiteCredito_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+               (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

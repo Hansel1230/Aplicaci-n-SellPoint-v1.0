@@ -56,10 +56,8 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.radGroupBox3 = new Telerik.WinControls.UI.RadGroupBox();
             this.TextBoxLimiteCredito = new Telerik.WinControls.UI.RadButtonTextBox();
-            this.comboBoxGrupoEntidad = new System.Windows.Forms.ComboBox();
             this.radGroupBox4 = new Telerik.WinControls.UI.RadGroupBox();
             this.comboBoxEstatus = new System.Windows.Forms.ComboBox();
             this.comboBoxEliminable = new System.Windows.Forms.ComboBox();
@@ -167,17 +165,21 @@
             // 
             this.TextBoxTelefono.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TextBoxTelefono.Location = new System.Drawing.Point(5, 374);
+            this.TextBoxTelefono.MaxLength = 11;
             this.TextBoxTelefono.Name = "TextBoxTelefono";
             this.TextBoxTelefono.Size = new System.Drawing.Size(100, 20);
             this.TextBoxTelefono.TabIndex = 14;
+            this.TextBoxTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxTelefono_KeyPress);
             // 
             // TextBoxNoDoc
             // 
             this.TextBoxNoDoc.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TextBoxNoDoc.Location = new System.Drawing.Point(8, 313);
+            this.TextBoxNoDoc.MaxLength = 15;
             this.TextBoxNoDoc.Name = "TextBoxNoDoc";
             this.TextBoxNoDoc.Size = new System.Drawing.Size(100, 20);
             this.TextBoxNoDoc.TabIndex = 14;
+            this.TextBoxNoDoc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxNoDoc_KeyPress);
             // 
             // TextBoxLocalidad
             // 
@@ -276,7 +278,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(5, 75);
+            this.label10.Location = new System.Drawing.Point(5, 42);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(92, 13);
             this.label10.TabIndex = 11;
@@ -392,47 +394,27 @@
             this.label19.TabIndex = 3;
             this.label19.Text = "URL Pagina web";
             // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label14.Location = new System.Drawing.Point(5, 24);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(99, 13);
-            this.label14.TabIndex = 7;
-            this.label14.Text = "Grupo de entidad";
-            // 
             // radGroupBox3
             // 
             this.radGroupBox3.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
             this.radGroupBox3.Controls.Add(this.TextBoxLimiteCredito);
-            this.radGroupBox3.Controls.Add(this.comboBoxGrupoEntidad);
-            this.radGroupBox3.Controls.Add(this.label14);
             this.radGroupBox3.Controls.Add(this.label10);
-            this.radGroupBox3.HeaderText = "Grupos / Tipos / Limites";
+            this.radGroupBox3.HeaderText = "Limites";
             this.radGroupBox3.Location = new System.Drawing.Point(228, 339);
             this.radGroupBox3.Name = "radGroupBox3";
             this.radGroupBox3.Size = new System.Drawing.Size(200, 126);
             this.radGroupBox3.TabIndex = 17;
-            this.radGroupBox3.Text = "Grupos / Tipos / Limites";
+            this.radGroupBox3.Text = "Limites";
             // 
             // TextBoxLimiteCredito
             // 
             this.TextBoxLimiteCredito.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TextBoxLimiteCredito.Location = new System.Drawing.Point(8, 101);
+            this.TextBoxLimiteCredito.Location = new System.Drawing.Point(8, 68);
+            this.TextBoxLimiteCredito.MaxLength = 99999;
             this.TextBoxLimiteCredito.Name = "TextBoxLimiteCredito";
             this.TextBoxLimiteCredito.Size = new System.Drawing.Size(100, 20);
             this.TextBoxLimiteCredito.TabIndex = 15;
-            this.TextBoxLimiteCredito.TextChanged += new System.EventHandler(this.TextBoxLimiteCredito_TextChanged);
-            // 
-            // comboBoxGrupoEntidad
-            // 
-            this.comboBoxGrupoEntidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxGrupoEntidad.FormattingEnabled = true;
-            this.comboBoxGrupoEntidad.Location = new System.Drawing.Point(5, 43);
-            this.comboBoxGrupoEntidad.Name = "comboBoxGrupoEntidad";
-            this.comboBoxGrupoEntidad.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxGrupoEntidad.TabIndex = 21;
+            this.TextBoxLimiteCredito.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxLimiteCredito_KeyPress);
             // 
             // radGroupBox4
             // 
@@ -680,7 +662,6 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label14;
         private Telerik.WinControls.UI.RadGroupBox radGroupBox3;
         private Telerik.WinControls.UI.RadButtonTextBox TextBoxLimiteCredito;
         private Telerik.WinControls.UI.RadGroupBox radGroupBox4;
@@ -697,7 +678,6 @@
         private Telerik.WinControls.RootRadElement object_05686bd9_e1c7_4b74_9dc4_e184b82ade3c;
         private System.Windows.Forms.ComboBox comboBoxTipoDoc;
         private System.Windows.Forms.ComboBox comboBoxTipoEntidad;
-        private System.Windows.Forms.ComboBox comboBoxGrupoEntidad;
         private System.Windows.Forms.ComboBox comboBoxEstatus;
         private System.Windows.Forms.ComboBox comboBoxEliminable;
         private System.Windows.Forms.ComboBox comboBoxRolUsuario;

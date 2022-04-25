@@ -161,20 +161,23 @@
             this.statusBar1.ShowPanels = true;
             this.statusBar1.Size = new System.Drawing.Size(587, 24);
             this.statusBar1.TabIndex = 7;
-            this.statusBar1.PanelClick += new System.Windows.Forms.StatusBarPanelClickEventHandler(this.statusBar1_PanelClick);
             // 
             // statusBarPanel1
             // 
+            this.statusBarPanel1.BorderStyle = System.Windows.Forms.StatusBarPanelBorderStyle.None;
             this.statusBarPanel1.Name = "statusBarPanel1";
             this.statusBarPanel1.Text = "statusBarPanel1";
             // 
             // statusBarPanel2
             // 
+            this.statusBarPanel2.BorderStyle = System.Windows.Forms.StatusBarPanelBorderStyle.Raised;
             this.statusBarPanel2.Name = "statusBarPanel2";
             this.statusBarPanel2.Text = "statusBarPanel2";
+            this.statusBarPanel2.Width = 150;
             // 
             // statusBarPanel3
             // 
+            this.statusBarPanel3.Alignment = System.Windows.Forms.HorizontalAlignment.Right;
             this.statusBarPanel3.Name = "statusBarPanel3";
             this.statusBarPanel3.Text = "statusBarPanel3";
             // 
@@ -182,9 +185,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::WindowsFormsAppSellPoint.Properties.Resources.Splash;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(587, 492);
             this.Controls.Add(this.statusBar1);
             this.Controls.Add(this.radMenu1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.IsMdiContainer = true;
             this.Name = "MDI";
