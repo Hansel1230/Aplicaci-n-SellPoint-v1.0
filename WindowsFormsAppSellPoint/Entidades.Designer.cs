@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition2 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
             this.labelEntidades = new System.Windows.Forms.Label();
             this.TextBoxBuscar = new Telerik.WinControls.UI.RadTextBox();
             this.ButtonEliminar = new Telerik.WinControls.UI.RadButton();
@@ -65,11 +65,12 @@
             // 
             // ButtonEliminar
             // 
-            this.ButtonEliminar.Location = new System.Drawing.Point(554, 357);
+            this.ButtonEliminar.Location = new System.Drawing.Point(554, 356);
             this.ButtonEliminar.Name = "ButtonEliminar";
             this.ButtonEliminar.Size = new System.Drawing.Size(110, 24);
             this.ButtonEliminar.TabIndex = 12;
             this.ButtonEliminar.Text = "Eliminar";
+            this.ButtonEliminar.Click += new System.EventHandler(this.ButtonEliminar_Click);
             // 
             // ButtonBuscar
             // 
@@ -111,7 +112,7 @@
             this.DataGridViewEntidades.MasterTemplate.AllowDragToGroup = false;
             this.DataGridViewEntidades.MasterTemplate.AllowEditRow = false;
             this.DataGridViewEntidades.MasterTemplate.AllowRowResize = false;
-            this.DataGridViewEntidades.MasterTemplate.ViewDefinition = tableViewDefinition2;
+            this.DataGridViewEntidades.MasterTemplate.ViewDefinition = tableViewDefinition1;
             this.DataGridViewEntidades.Name = "DataGridViewEntidades";
             this.DataGridViewEntidades.Size = new System.Drawing.Size(503, 289);
             this.DataGridViewEntidades.TabIndex = 8;
