@@ -78,11 +78,6 @@ namespace WindowsFormsAppSellPoint
             {
                 MessageBox.Show("Debe seleccionar una fila!!");
             }
-
-
-
-
-
         }
         #endregion
 
@@ -126,18 +121,6 @@ namespace WindowsFormsAppSellPoint
         private void ButtonBuscar_Click(object sender, EventArgs e)
         {
             this.Close();
-            //if (frm != null)
-            //{
-            //    //si la instancia existe la pongo en primer plano
-            //    frm.BringToFront();
-            //    return;
-            //}
-
-            ////sino existe la instancia se crea una nueva
-            //Entidades frm2 = new Entidades();
-            //frm2.Hide();
-            //frm = new MDI();
-            //frm.Show();
         }
     }
 }

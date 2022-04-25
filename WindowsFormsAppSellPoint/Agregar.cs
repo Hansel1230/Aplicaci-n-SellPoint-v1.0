@@ -1,6 +1,5 @@
 ﻿using ProyectoEntidades;
 using System;
-using System.Data;
 using System.Windows.Forms;
 
 namespace WindowsFormsAppSellPoint
@@ -43,11 +42,6 @@ namespace WindowsFormsAppSellPoint
                 isValid = false;
                 MessageBox.Show("Debe ingresar un Numero de telefono!!");
             }
-            //else if (comboBoxGrupoEntidad.SelectedItem == null)
-            //{
-            //    isValid = false;
-            //    MessageBox.Show("Debe seleccinar un grupo entidad!!");
-            //}
             else if (TextBoxNombreUsuario.Text == "")
             {
                 isValid = false;
@@ -75,28 +69,6 @@ namespace WindowsFormsAppSellPoint
             }
             else { isValid = true; }
         }
-
-        //public void NumValid() 
-        //{
-        //    try
-        //    {
-        //        int validador;
-        //        validador = Convert.ToInt32(TextBoxNoDoc.Text);
-        //        validador = Convert.ToInt32(TextBoxLimiteCredito.Text);
-        //        if (Convert.ToBoolean(validador ))
-        //        {
-        //            numValid = true;
-        //        }
-        //        else {
-        //            numValid = false;
-        //            MessageBox.Show("Debe ingresar numeros en sus correspondientes lugares!!");
-        //        }
-        //    }
-        //    catch
-        //    {
-        //    }
-
-        //}
         public void insertar()
         {
 
@@ -158,8 +130,6 @@ namespace WindowsFormsAppSellPoint
             TextBoxURL_Tiktok.Text = "";
             TextBoxURL_Twiter.Text = "";
             TextBoxURL_Web.Text = "";
-
-
         }
         #endregion
 
@@ -167,7 +137,6 @@ namespace WindowsFormsAppSellPoint
         private void ButtonAceptar_Click(object sender, EventArgs e)
         {
             AddValid();
-            //NumValid();
             if (isValid == true)
             {
                 if (entidades.Modificar == true)
@@ -183,15 +152,6 @@ namespace WindowsFormsAppSellPoint
                     entidades.labelEntidades.Text = "Entidades";
                     entidades.Show();
                 }
-
-                //if (numValid == true)
-                //{
-                //    insertar();
-                //    this.Close();
-                //    entidades.CargarData();
-                //    VaciarData();
-                //    entidades.Show();
-                //}
             }
         }
         private void ButtonCancelar_Click(object sender, EventArgs e)
@@ -200,7 +160,6 @@ namespace WindowsFormsAppSellPoint
             entidades.Show();
             this.Close();
         }
-
 
         #endregion
 
