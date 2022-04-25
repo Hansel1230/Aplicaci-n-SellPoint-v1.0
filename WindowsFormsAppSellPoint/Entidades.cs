@@ -14,6 +14,7 @@ namespace WindowsFormsAppSellPoint
 {
     public partial class Entidades : Form
     {
+        public bool Modificar { get; set; } = false;
         clsBeEntidades beEntidades = new clsBeEntidades();  
         clsLnEntidades daEntidades = new clsLnEntidades();  
 
@@ -41,7 +42,26 @@ namespace WindowsFormsAppSellPoint
         private void ButtonAdicionar_Click(object sender, EventArgs e)
         {
             Agregar agregar = new Agregar();
+            this.Close();
             agregar.ShowDialog(); 
+           
+        }
+        private void ButtonModificar_Click(object sender, EventArgs e)
+        {
+            Agregar agregar = new Agregar();
+            if (DataGridViewEntidades.SelectedRows.Count > 0) 
+            {
+                agregar.label1.Text = "Modificar Entidad";
+                Modificar = true;
+                agregar.ShowDialog();
+                this.Close();
+            }
+            else 
+            {
+                MessageBox.Show("Debe seleccionar una fila!!");
+            }
+            
+            
         }
         #endregion
 
@@ -50,22 +70,11 @@ namespace WindowsFormsAppSellPoint
         {
             var data = new clsLnEntidades();
             DataGridViewEntidades.DataSource = data.Listar();
-        }   
-        #endregion
-
-        private Agregar add2;
-        private void ButtonModificar_Click(object sender, EventArgs e)
-        {
-            if (add2 == null)
-            {
-                add2 = new Agregar();
-                add2.FormClosed += (o, args) => add2 = null;
-            }
-            add2.Show();
-            add2.BringToFront();
-            add2.TextBoxDescripcion.Text = DataGridViewEntidades.CurrentRow.Cells[0].Value.ToString();
-            add2.
+            DataGridViewEntidades.ClearSelection();
 
         }
+        #endregion
+
+
     }
 }

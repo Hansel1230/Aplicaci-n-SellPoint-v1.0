@@ -7,7 +7,9 @@ namespace WindowsFormsAppSellPoint
 {
     public partial class Agregar : Form
     {
-        public bool isValid { get; set; } = true;
+        public bool isValid { get; set; }=true;
+        public bool numValid { get; set; } = true;
+
         clsBeEntidades beEntidades = new clsBeEntidades();
         Entidades entidades = new Entidades();
         clsLnEntidades daEntidades = new clsLnEntidades();
@@ -73,8 +75,29 @@ namespace WindowsFormsAppSellPoint
             }
             else { isValid = true; }
         }
+        
+        //public void NumValid() 
+        //{
+        //    try
+        //    {
+        //        int validador;
+        //        validador = Convert.ToInt32(TextBoxNoDoc.Text);
+        //        validador = Convert.ToInt32(TextBoxLimiteCredito.Text);
+        //        if (Convert.ToBoolean(validador ))
+        //        {
+        //            numValid = true;
+        //        }
+        //        else {
+        //            numValid = false;
+        //            MessageBox.Show("Debe ingresar numeros en sus correspondientes lugares!!");
+        //        }
+        //    }
+        //    catch
+        //    {
+        //    }
 
-        public void insertar()
+        //}
+        public void insertar() 
         {
 
             try
@@ -111,6 +134,7 @@ namespace WindowsFormsAppSellPoint
             beEntidades.URLTikTok = Convert.ToString(TextBoxURL_Tiktok.Text);
             beEntidades.Comentario = Convert.ToString(TextEditorComentario.Text);
             daEntidades.Insertar(ref beEntidades);
+            MessageBox.Show("Entidad Guardada con exito", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         public void VaciarData()
         {
@@ -142,42 +166,44 @@ namespace WindowsFormsAppSellPoint
         private void ButtonAceptar_Click(object sender, EventArgs e)
         {
             AddValid();
-            if (isValid == true)
+            //NumValid();
+            if (isValid == true) 
             {
-                insertar();
-                MessageBox.Show("Registro Exitoso!");
-                this.Close();
-                entidades.CargarData();
-                VaciarData();
+                if (entidades.Modificar == true) 
+                {
+
+                }
+                else 
+                {
+                    insertar();
+                    this.Close();
+                    entidades.CargarData();
+                    VaciarData();
+                    entidades.Show();
+                }
+                
+                //if (numValid == true)
+                //{
+                //    insertar();
+                //    this.Close();
+                //    entidades.CargarData();
+                //    VaciarData();
+                //    entidades.Show();
+                //}
             }
         }
         private void ButtonCancelar_Click(object sender, EventArgs e)
         {
             VaciarData();
+            entidades.Show();
             this.Close();
         }
 
 
         #endregion
-
-
-        private void TextBoxTelefono_KeyPress(object sender, KeyPressEventArgs e)
+                                                
+        private void TextBoxLimiteCredito_TextChanged(object sender, EventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
-               (e.KeyChar != '.'))
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void TextBoxNoDoc_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
-               (e.KeyChar != '.'))
-            {
-                e.Handled = true;
-            }
-        }
 
         private void TextBoxLimiteCredito_KeyPress(object sender, KeyPressEventArgs e)
         {
