@@ -86,6 +86,7 @@
             this.ButtonModificar.Size = new System.Drawing.Size(110, 24);
             this.ButtonModificar.TabIndex = 10;
             this.ButtonModificar.Text = "Modificar";
+            this.ButtonModificar.Click += new System.EventHandler(this.ButtonModificar_Click);
             // 
             // ButtonAdicionar
             // 

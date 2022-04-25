@@ -1,5 +1,6 @@
 ﻿using ProyectoEntidades;
 using System;
+using System.Data;
 using System.Windows.Forms;
 
 namespace WindowsFormsAppSellPoint
@@ -110,7 +111,6 @@ namespace WindowsFormsAppSellPoint
             beEntidades.URLTikTok = Convert.ToString(TextBoxURL_Tiktok.Text);
             beEntidades.Comentario = Convert.ToString(TextEditorComentario.Text);
             daEntidades.Insertar(ref beEntidades);
-
         }
         public void VaciarData()
         {

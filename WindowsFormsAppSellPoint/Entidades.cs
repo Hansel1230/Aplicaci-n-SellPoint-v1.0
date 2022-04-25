@@ -50,7 +50,22 @@ namespace WindowsFormsAppSellPoint
         {
             var data = new clsLnEntidades();
             DataGridViewEntidades.DataSource = data.Listar();
+        }   
+        #endregion
+
+        private Agregar add2;
+        private void ButtonModificar_Click(object sender, EventArgs e)
+        {
+            if (add2 == null)
+            {
+                add2 = new Agregar();
+                add2.FormClosed += (o, args) => add2 = null;
+            }
+            add2.Show();
+            add2.BringToFront();
+            add2.TextBoxDescripcion.Text = DataGridViewEntidades.CurrentRow.Cells[0].Value.ToString();
+            add2.
+
         }
-        #endregion        
     }
 }
