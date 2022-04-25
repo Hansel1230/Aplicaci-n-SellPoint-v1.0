@@ -110,6 +110,7 @@ namespace WindowsFormsAppSellPoint
             beEntidades.LimiteCredito = Convert.ToInt32(TextBoxLimiteCredito.Text);
             beEntidades.Comentario = Convert.ToString(TextEditorComentario.Text);
             daEntidades.Insertar(ref beEntidades);
+            MessageBox.Show("Entidad Guardada con exito", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         public void VaciarData() 
         {
@@ -148,11 +149,13 @@ namespace WindowsFormsAppSellPoint
                 this.Close();
                 entidades.CargarData();
                 VaciarData();
+                entidades.Show();
             }
         }
         private void ButtonCancelar_Click(object sender, EventArgs e)
         {
             VaciarData();
+            entidades.Show();
             this.Close();
         }
 

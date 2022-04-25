@@ -129,6 +129,7 @@
             this.Controls.Add(this.DataGridViewEntidades);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Entidades";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Entidades";
             this.Load += new System.EventHandler(this.Entidades_Load);
             ((System.ComponentModel.ISupportInitialize)(this.TextBoxBuscar)).EndInit();

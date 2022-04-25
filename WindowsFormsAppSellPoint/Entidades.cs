@@ -41,7 +41,9 @@ namespace WindowsFormsAppSellPoint
         private void ButtonAdicionar_Click(object sender, EventArgs e)
         {
             Agregar agregar = new Agregar();
+            this.Close();
             agregar.ShowDialog(); 
+           
         }
         #endregion
 
