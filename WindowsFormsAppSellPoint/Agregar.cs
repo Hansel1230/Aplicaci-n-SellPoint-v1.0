@@ -14,6 +14,8 @@ namespace WindowsFormsAppSellPoint
     public partial class Agregar : Form
     {
         public bool isValid { get; set; }=true;
+        public bool numValid { get; set; } = true;
+
         clsBeEntidades beEntidades = new clsBeEntidades();
         Entidades entidades = new Entidades();
         clsLnEntidades daEntidades = new clsLnEntidades();
@@ -81,6 +83,27 @@ namespace WindowsFormsAppSellPoint
             else { isValid = true;  }
         }
         
+        //public void NumValid() 
+        //{
+        //    try
+        //    {
+        //        int validador;
+        //        validador = Convert.ToInt32(TextBoxNoDoc.Text);
+        //        validador = Convert.ToInt32(TextBoxLimiteCredito.Text);
+        //        if (Convert.ToBoolean(validador ))
+        //        {
+        //            numValid = true;
+        //        }
+        //        else {
+        //            numValid = false;
+        //            MessageBox.Show("Debe ingresar numeros en sus correspondientes lugares!!");
+        //        }
+        //    }
+        //    catch
+        //    {
+        //    }
+
+        //}
         public void insertar() 
         {
             beEntidades.TipoEntidad = Convert.ToString(comboBoxTipoEntidad.SelectedValue);
@@ -143,13 +166,30 @@ namespace WindowsFormsAppSellPoint
         private void ButtonAceptar_Click(object sender, EventArgs e)
         {
             AddValid();
+            //NumValid();
             if (isValid == true) 
             {
-                insertar();
-                this.Close();
-                entidades.CargarData();
-                VaciarData();
-                entidades.Show();
+                if (entidades.Modificar == true) 
+                {
+
+                }
+                else 
+                {
+                    insertar();
+                    this.Close();
+                    entidades.CargarData();
+                    VaciarData();
+                    entidades.Show();
+                }
+                
+                //if (numValid == true)
+                //{
+                //    insertar();
+                //    this.Close();
+                //    entidades.CargarData();
+                //    VaciarData();
+                //    entidades.Show();
+                //}
             }
         }
         private void ButtonCancelar_Click(object sender, EventArgs e)
@@ -160,7 +200,7 @@ namespace WindowsFormsAppSellPoint
         }
 
         #endregion
-
+                                                
         private void TextBoxLimiteCredito_TextChanged(object sender, EventArgs e)
         {
 

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
+            Telerik.WinControls.UI.TableViewDefinition tableViewDefinition2 = new Telerik.WinControls.UI.TableViewDefinition();
             this.labelEntidades = new System.Windows.Forms.Label();
             this.TextBoxBuscar = new Telerik.WinControls.UI.RadTextBox();
             this.ButtonEliminar = new Telerik.WinControls.UI.RadButton();
@@ -86,6 +86,7 @@
             this.ButtonModificar.Size = new System.Drawing.Size(110, 24);
             this.ButtonModificar.TabIndex = 10;
             this.ButtonModificar.Text = "Modificar";
+            this.ButtonModificar.Click += new System.EventHandler(this.ButtonModificar_Click);
             // 
             // ButtonAdicionar
             // 
@@ -110,7 +111,7 @@
             this.DataGridViewEntidades.MasterTemplate.AllowDragToGroup = false;
             this.DataGridViewEntidades.MasterTemplate.AllowEditRow = false;
             this.DataGridViewEntidades.MasterTemplate.AllowRowResize = false;
-            this.DataGridViewEntidades.MasterTemplate.ViewDefinition = tableViewDefinition1;
+            this.DataGridViewEntidades.MasterTemplate.ViewDefinition = tableViewDefinition2;
             this.DataGridViewEntidades.Name = "DataGridViewEntidades";
             this.DataGridViewEntidades.Size = new System.Drawing.Size(503, 289);
             this.DataGridViewEntidades.TabIndex = 8;
@@ -152,6 +153,6 @@
         private Telerik.WinControls.UI.RadButton ButtonBuscar;
         private Telerik.WinControls.UI.RadButton ButtonModificar;
         public Telerik.WinControls.UI.RadButton ButtonAdicionar;
-        private Telerik.WinControls.UI.RadGridView DataGridViewEntidades;
+        public Telerik.WinControls.UI.RadGridView DataGridViewEntidades;
     }
 }

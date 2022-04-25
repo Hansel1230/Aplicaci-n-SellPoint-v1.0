@@ -653,9 +653,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private Telerik.WinControls.UI.RadGroupBox radGroupBox1;
         private Telerik.WinControls.UI.RadButtonTextBox TextBoxTelefono;
         private Telerik.WinControls.UI.RadButtonTextBox TextBoxNoDoc;
         private Telerik.WinControls.UI.RadButtonTextBox TextBoxLocalidad;
@@ -669,7 +666,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label10;
-        private Telerik.WinControls.UI.RadGroupBox radGroupBox2;
         private Telerik.WinControls.UI.RadButtonTextBox TextBoxURL_Tiktok;
         private Telerik.WinControls.UI.RadButtonTextBox TextBoxURL_Web;
         private Telerik.WinControls.UI.RadButtonTextBox TextBoxURL_Twiter;
@@ -681,9 +677,7 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label14;
-        private Telerik.WinControls.UI.RadGroupBox radGroupBox3;
         private Telerik.WinControls.UI.RadButtonTextBox TextBoxLimiteCredito;
-        private Telerik.WinControls.UI.RadGroupBox radGroupBox4;
         private System.Windows.Forms.Label label11;
         private Telerik.WinControls.UI.RadRichTextEditor TextEditorComentario;
         private Telerik.WinControls.UI.RadButtonTextBox TextBoxNombreUsuario;
@@ -703,5 +697,10 @@
         private System.Windows.Forms.ComboBox comboBoxRolUsuario;
         private Telerik.WinControls.UI.RadButton ButtonAceptar;
         private Telerik.WinControls.UI.RadButton ButtonCancelar;
+        public System.Windows.Forms.Label label1;
+        public Telerik.WinControls.UI.RadGroupBox radGroupBox1;
+        public Telerik.WinControls.UI.RadGroupBox radGroupBox2;
+        public Telerik.WinControls.UI.RadGroupBox radGroupBox3;
+        public Telerik.WinControls.UI.RadGroupBox radGroupBox4;
     }
 }

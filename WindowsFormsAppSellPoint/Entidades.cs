@@ -14,6 +14,7 @@ namespace WindowsFormsAppSellPoint
 {
     public partial class Entidades : Form
     {
+        public bool Modificar { get; set; } = false;
         clsBeEntidades beEntidades = new clsBeEntidades();  
         clsLnEntidades daEntidades = new clsLnEntidades();  
 
@@ -45,6 +46,23 @@ namespace WindowsFormsAppSellPoint
             agregar.ShowDialog(); 
            
         }
+        private void ButtonModificar_Click(object sender, EventArgs e)
+        {
+            Agregar agregar = new Agregar();
+            if (DataGridViewEntidades.SelectedRows.Count > 0) 
+            {
+                agregar.label1.Text = "Modificar Entidad";
+                Modificar = true;
+                agregar.ShowDialog();
+                this.Close();
+            }
+            else 
+            {
+                MessageBox.Show("Debe seleccionar una fila!!");
+            }
+            
+            
+        }
         #endregion
 
         #region Metodos
@@ -52,7 +70,11 @@ namespace WindowsFormsAppSellPoint
         {
             var data = new clsLnEntidades();
             DataGridViewEntidades.DataSource = data.Listar();
+            DataGridViewEntidades.ClearSelection();
+
         }
-        #endregion        
+        #endregion
+
+
     }
 }
