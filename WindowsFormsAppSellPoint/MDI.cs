@@ -45,7 +45,7 @@ namespace WindowsFormsAppSellPoint
                 frm3.FormClosed += (o, args) => frm3 = null;
             }
             frm3.Show();
-            frm3.label1.Text = "Entidades";
+            frm3.labelEntidades.Text = "Entidades";
             frm3.BringToFront();
         }
 

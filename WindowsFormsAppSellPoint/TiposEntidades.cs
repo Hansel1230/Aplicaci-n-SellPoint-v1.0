@@ -30,7 +30,7 @@ namespace WindowsFormsAppSellPoint
                 add = new Agregar();
                 add.FormClosed += (o, args) => add = null;
             }
-            add.Show();
+            //add.Show();
             add.BringToFront();
         }
     }

@@ -33,5 +33,10 @@ namespace WindowsFormsAppSellPoint
             add.Show();
             add.BringToFront();
         }
+
+        private void GrupoEntidades_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
