@@ -11,7 +11,6 @@ namespace WindowsFormsAppSellPoint
         #region Constructor
         public FormLogin()
         {
-
             Thread t = new Thread(new ThreadStart(SplashStart));
             t.Start();
 

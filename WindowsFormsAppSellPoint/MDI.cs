@@ -29,7 +29,7 @@ namespace WindowsFormsAppSellPoint
             if (frm2 == null)
             {
                 frm2 = new TiposEntidades();
-                frm2.FormClosed += (o, args) => frm3 = null;
+                frm2.FormClosed += (o, args) => frm2 = null;
             }
             frm2.Show();
             frm2.label1.Text = "Tipos Entidades";
@@ -45,7 +45,7 @@ namespace WindowsFormsAppSellPoint
                 frm3.FormClosed += (o, args) => frm3 = null;
             }
             frm3.Show();
-            frm3.label1.Text = "Entidades";
+            frm3.labelEntidades.Text = "Entidades";
             frm3.BringToFront();
         }
 
@@ -65,7 +65,7 @@ namespace WindowsFormsAppSellPoint
         {
             statusBar1.Panels[0].Text = DateTime.Now.ToLongTimeString();
             statusBar1.Panels[1].Text = DateTime.Now.ToLongDateString();
-            statusBar1.Panels[2].Text = FormLogin.UserName;
+            statusBar1.Panels[2].Text = "USER: " + FormLogin.UserName;
             //StatusBarPanel userPanel = new StatusBarPanel();
             //userPanel.Text = FormLogin.UserName;
             //statusBar1.Panels.Add(userPanel);
@@ -78,7 +78,8 @@ namespace WindowsFormsAppSellPoint
 
         private void radMenuItem8_Click(object sender, EventArgs e)
         {
-            this.Close();        }
+            this.Close();
+        }
 
         private void statusBar1_PanelClick(object sender, StatusBarPanelClickEventArgs e)
         {
