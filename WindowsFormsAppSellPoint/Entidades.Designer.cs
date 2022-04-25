@@ -32,13 +32,13 @@
             this.labelEntidades = new System.Windows.Forms.Label();
             this.TextBoxBuscar = new Telerik.WinControls.UI.RadTextBox();
             this.ButtonEliminar = new Telerik.WinControls.UI.RadButton();
-            this.ButtonBuscar = new Telerik.WinControls.UI.RadButton();
+            this.ButtonAtras = new Telerik.WinControls.UI.RadButton();
             this.ButtonModificar = new Telerik.WinControls.UI.RadButton();
             this.ButtonAdicionar = new Telerik.WinControls.UI.RadButton();
             this.DataGridViewEntidades = new Telerik.WinControls.UI.RadGridView();
             ((System.ComponentModel.ISupportInitialize)(this.TextBoxBuscar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ButtonEliminar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ButtonBuscar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ButtonAtras)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ButtonModificar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ButtonAdicionar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewEntidades)).BeginInit();
@@ -62,6 +62,8 @@
             this.TextBoxBuscar.Name = "TextBoxBuscar";
             this.TextBoxBuscar.Size = new System.Drawing.Size(503, 20);
             this.TextBoxBuscar.TabIndex = 13;
+            this.TextBoxBuscar.TextChanged += new System.EventHandler(this.TextBoxBuscar_TextChanged);
+            this.TextBoxBuscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxBuscar_KeyPress);
             // 
             // ButtonEliminar
             // 
@@ -71,13 +73,14 @@
             this.ButtonEliminar.TabIndex = 12;
             this.ButtonEliminar.Text = "Eliminar";
             // 
-            // ButtonBuscar
+            // ButtonAtras
             // 
-            this.ButtonBuscar.Location = new System.Drawing.Point(554, 66);
-            this.ButtonBuscar.Name = "ButtonBuscar";
-            this.ButtonBuscar.Size = new System.Drawing.Size(110, 24);
-            this.ButtonBuscar.TabIndex = 11;
-            this.ButtonBuscar.Text = "Buscar";
+            this.ButtonAtras.Location = new System.Drawing.Point(554, 66);
+            this.ButtonAtras.Name = "ButtonAtras";
+            this.ButtonAtras.Size = new System.Drawing.Size(110, 24);
+            this.ButtonAtras.TabIndex = 11;
+            this.ButtonAtras.Text = "Atras";
+            this.ButtonAtras.Click += new System.EventHandler(this.ButtonBuscar_Click);
             // 
             // ButtonModificar
             // 
@@ -124,7 +127,7 @@
             this.Controls.Add(this.labelEntidades);
             this.Controls.Add(this.TextBoxBuscar);
             this.Controls.Add(this.ButtonEliminar);
-            this.Controls.Add(this.ButtonBuscar);
+            this.Controls.Add(this.ButtonAtras);
             this.Controls.Add(this.ButtonModificar);
             this.Controls.Add(this.ButtonAdicionar);
             this.Controls.Add(this.DataGridViewEntidades);
@@ -135,7 +138,7 @@
             this.Load += new System.EventHandler(this.Entidades_Load);
             ((System.ComponentModel.ISupportInitialize)(this.TextBoxBuscar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ButtonEliminar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ButtonBuscar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ButtonAtras)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ButtonModificar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ButtonAdicionar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewEntidades.MasterTemplate)).EndInit();
@@ -150,7 +153,7 @@
         public System.Windows.Forms.Label labelEntidades;
         private Telerik.WinControls.UI.RadTextBox TextBoxBuscar;
         private Telerik.WinControls.UI.RadButton ButtonEliminar;
-        private Telerik.WinControls.UI.RadButton ButtonBuscar;
+        private Telerik.WinControls.UI.RadButton ButtonAtras;
         private Telerik.WinControls.UI.RadButton ButtonModificar;
         public Telerik.WinControls.UI.RadButton ButtonAdicionar;
         public Telerik.WinControls.UI.RadGridView DataGridViewEntidades;

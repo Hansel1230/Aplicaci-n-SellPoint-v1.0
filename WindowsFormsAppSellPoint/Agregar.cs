@@ -7,7 +7,7 @@ namespace WindowsFormsAppSellPoint
 {
     public partial class Agregar : Form
     {
-        public bool isValid { get; set; }=true;
+        public bool isValid { get; set; } = true;
         public bool numValid { get; set; } = true;
 
         clsBeEntidades beEntidades = new clsBeEntidades();
@@ -75,7 +75,7 @@ namespace WindowsFormsAppSellPoint
             }
             else { isValid = true; }
         }
-        
+
         //public void NumValid() 
         //{
         //    try
@@ -97,7 +97,7 @@ namespace WindowsFormsAppSellPoint
         //    }
 
         //}
-        public void insertar() 
+        public void insertar()
         {
 
             try
@@ -110,11 +110,12 @@ namespace WindowsFormsAppSellPoint
             {
                 MessageBox.Show("Insertar solo numeros por favor");
             }
-            beEntidades.TipoEntidad = Convert.ToString(comboBoxTipoEntidad.SelectedValue);
+            beEntidades.TipoEntidad = Convert.ToString(comboBoxTipoEntidad.SelectedItem);
 
+            beEntidades.TipoDocumento = Convert.ToString(comboBoxTipoDoc.SelectedItem);
             beEntidades.UserNameEntidad = Convert.ToString(TextBoxNombreUsuario.Text);
             beEntidades.PassworEntidad = Convert.ToString(TextBoxContrasena.Text);
-            beEntidades.RolUserEntidad = Convert.ToString(comboBoxTipoEntidad.SelectedItem);
+            beEntidades.RolUserEntidad = Convert.ToString(comboBoxRolUsuario.SelectedItem);
             beEntidades.Statuss = Convert.ToString(comboBoxEstatus.SelectedItem);
             if (comboBoxEliminable.SelectedIndex == 0)
             {
@@ -167,21 +168,22 @@ namespace WindowsFormsAppSellPoint
         {
             AddValid();
             //NumValid();
-            if (isValid == true) 
+            if (isValid == true)
             {
-                if (entidades.Modificar == true) 
+                if (entidades.Modificar == true)
                 {
 
                 }
-                else 
+                else
                 {
                     insertar();
                     this.Close();
                     entidades.CargarData();
                     VaciarData();
+                    entidades.labelEntidades.Text = "Entidades";
                     entidades.Show();
                 }
-                
+
                 //if (numValid == true)
                 //{
                 //    insertar();
@@ -201,10 +203,23 @@ namespace WindowsFormsAppSellPoint
 
 
         #endregion
-                                                
-        private void TextBoxLimiteCredito_TextChanged(object sender, EventArgs e)
-        {
 
+        private void TextBoxNoDoc_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+               (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+        }
+        private void TextBoxTelefono_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+               (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+        }
         private void TextBoxLimiteCredito_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
