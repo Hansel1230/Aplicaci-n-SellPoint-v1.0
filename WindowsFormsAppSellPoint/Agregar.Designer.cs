@@ -30,77 +30,75 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.radGroupBox1 = new Telerik.WinControls.UI.RadGroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.comboBoxTipoDoc = new System.Windows.Forms.ComboBox();
+            this.comboBoxTipoEntidad = new System.Windows.Forms.ComboBox();
+            this.TextBoxTelefono = new Telerik.WinControls.UI.RadButtonTextBox();
+            this.TextBoxNoDoc = new Telerik.WinControls.UI.RadButtonTextBox();
+            this.TextBoxLocalidad = new Telerik.WinControls.UI.RadButtonTextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.TextBoxDireccion = new Telerik.WinControls.UI.RadButtonTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.TextBoxDescripcion = new Telerik.WinControls.UI.RadButtonTextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.radButtonTextBox2 = new Telerik.WinControls.UI.RadButtonTextBox();
-            this.radButtonTextBox3 = new Telerik.WinControls.UI.RadButtonTextBox();
-            this.radButtonTextBox4 = new Telerik.WinControls.UI.RadButtonTextBox();
-            this.radButtonTextBox5 = new Telerik.WinControls.UI.RadButtonTextBox();
-            this.radButtonTextBox6 = new Telerik.WinControls.UI.RadButtonTextBox();
             this.radGroupBox2 = new Telerik.WinControls.UI.RadGroupBox();
-            this.radButtonTextBox8 = new Telerik.WinControls.UI.RadButtonTextBox();
-            this.radButtonTextBox9 = new Telerik.WinControls.UI.RadButtonTextBox();
-            this.radButtonTextBox10 = new Telerik.WinControls.UI.RadButtonTextBox();
+            this.TextBoxURL_Tiktok = new Telerik.WinControls.UI.RadButtonTextBox();
+            this.TextBoxURL_Web = new Telerik.WinControls.UI.RadButtonTextBox();
+            this.TextBoxURL_Twiter = new Telerik.WinControls.UI.RadButtonTextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.radButtonTextBox11 = new Telerik.WinControls.UI.RadButtonTextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.radButtonTextBox12 = new Telerik.WinControls.UI.RadButtonTextBox();
+            this.TextBoxURL_Istagram = new Telerik.WinControls.UI.RadButtonTextBox();
+            this.TextBoxURL_face = new Telerik.WinControls.UI.RadButtonTextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.radGroupBox3 = new Telerik.WinControls.UI.RadGroupBox();
-            this.radButtonTextBox7 = new Telerik.WinControls.UI.RadButtonTextBox();
+            this.TextBoxLimiteCredito = new Telerik.WinControls.UI.RadButtonTextBox();
             this.radGroupBox4 = new Telerik.WinControls.UI.RadGroupBox();
-            this.radButtonTextBox15 = new Telerik.WinControls.UI.RadButtonTextBox();
+            this.comboBoxEstatus = new System.Windows.Forms.ComboBox();
+            this.comboBoxEliminable = new System.Windows.Forms.ComboBox();
+            this.comboBoxRolUsuario = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.TextEditorComentario = new Telerik.WinControls.UI.RadRichTextEditor();
+            this.TextBoxNombreUsuario = new Telerik.WinControls.UI.RadButtonTextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.radButtonTextBox18 = new Telerik.WinControls.UI.RadButtonTextBox();
+            this.TextBoxContrasena = new Telerik.WinControls.UI.RadButtonTextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
-            this.radRichTextEditor1 = new Telerik.WinControls.UI.RadRichTextEditor();
-            this.label11 = new System.Windows.Forms.Label();
             this.radThemeManager1 = new Telerik.WinControls.RadThemeManager();
             this.object_05686bd9_e1c7_4b74_9dc4_e184b82ade3c = new Telerik.WinControls.RootRadElement();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.radButton1 = new Telerik.WinControls.UI.RadButton();
-            this.radButton2 = new Telerik.WinControls.UI.RadButton();
+            this.ButtonAceptar = new Telerik.WinControls.UI.RadButton();
+            this.ButtonCancelar = new Telerik.WinControls.UI.RadButton();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).BeginInit();
             this.radGroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radButtonTextBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButtonTextBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButtonTextBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButtonTextBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButtonTextBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TextBoxTelefono)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TextBoxNoDoc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TextBoxLocalidad)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TextBoxDireccion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TextBoxDescripcion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox2)).BeginInit();
             this.radGroupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radButtonTextBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButtonTextBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButtonTextBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButtonTextBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButtonTextBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TextBoxURL_Tiktok)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TextBoxURL_Web)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TextBoxURL_Twiter)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TextBoxURL_Istagram)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TextBoxURL_face)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox3)).BeginInit();
             this.radGroupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radButtonTextBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TextBoxLimiteCredito)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox4)).BeginInit();
             this.radGroupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radButtonTextBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButtonTextBox18)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radRichTextEditor1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TextEditorComentario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TextBoxNombreUsuario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TextBoxContrasena)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ButtonAceptar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ButtonCancelar)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -116,17 +114,17 @@
             // radGroupBox1
             // 
             this.radGroupBox1.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
-            this.radGroupBox1.Controls.Add(this.comboBox6);
-            this.radGroupBox1.Controls.Add(this.comboBox1);
-            this.radGroupBox1.Controls.Add(this.radButtonTextBox5);
-            this.radGroupBox1.Controls.Add(this.radButtonTextBox6);
-            this.radGroupBox1.Controls.Add(this.radButtonTextBox4);
+            this.radGroupBox1.Controls.Add(this.comboBoxTipoDoc);
+            this.radGroupBox1.Controls.Add(this.comboBoxTipoEntidad);
+            this.radGroupBox1.Controls.Add(this.TextBoxTelefono);
+            this.radGroupBox1.Controls.Add(this.TextBoxNoDoc);
+            this.radGroupBox1.Controls.Add(this.TextBoxLocalidad);
             this.radGroupBox1.Controls.Add(this.label9);
             this.radGroupBox1.Controls.Add(this.label8);
-            this.radGroupBox1.Controls.Add(this.radButtonTextBox3);
+            this.radGroupBox1.Controls.Add(this.TextBoxDireccion);
             this.radGroupBox1.Controls.Add(this.label6);
             this.radGroupBox1.Controls.Add(this.label7);
-            this.radGroupBox1.Controls.Add(this.radButtonTextBox2);
+            this.radGroupBox1.Controls.Add(this.TextBoxDescripcion);
             this.radGroupBox1.Controls.Add(this.label5);
             this.radGroupBox1.Controls.Add(this.label4);
             this.radGroupBox1.Controls.Add(this.label3);
@@ -137,35 +135,87 @@
             this.radGroupBox1.TabIndex = 2;
             this.radGroupBox1.Text = "Datos Generales";
             // 
-            // label3
+            // comboBoxTipoDoc
             // 
-            this.label3.AutoSize = true;
-            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label3.Location = new System.Drawing.Point(5, 18);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(67, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Descripcion";
+            this.comboBoxTipoDoc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxTipoDoc.FormattingEnabled = true;
+            this.comboBoxTipoDoc.Items.AddRange(new object[] {
+            "RNC",
+            "Cédula",
+            "Pasaporte",
+            ""});
+            this.comboBoxTipoDoc.Location = new System.Drawing.Point(8, 256);
+            this.comboBoxTipoDoc.Name = "comboBoxTipoDoc";
+            this.comboBoxTipoDoc.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxTipoDoc.TabIndex = 22;
             // 
-            // label4
+            // comboBoxTipoEntidad
             // 
-            this.label4.AutoSize = true;
-            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label4.Location = new System.Drawing.Point(5, 70);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 13);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Direccion";
+            this.comboBoxTipoEntidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxTipoEntidad.FormattingEnabled = true;
+            this.comboBoxTipoEntidad.Items.AddRange(new object[] {
+            "Física",
+            "Jurídica"});
+            this.comboBoxTipoEntidad.Location = new System.Drawing.Point(5, 205);
+            this.comboBoxTipoEntidad.Name = "comboBoxTipoEntidad";
+            this.comboBoxTipoEntidad.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxTipoEntidad.TabIndex = 17;
             // 
-            // label5
+            // TextBoxTelefono
             // 
-            this.label5.AutoSize = true;
-            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label5.Location = new System.Drawing.Point(5, 133);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 13);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Localidad";
+            this.TextBoxTelefono.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TextBoxTelefono.Location = new System.Drawing.Point(5, 374);
+            this.TextBoxTelefono.MaxLength = 11;
+            this.TextBoxTelefono.Name = "TextBoxTelefono";
+            this.TextBoxTelefono.Size = new System.Drawing.Size(100, 20);
+            this.TextBoxTelefono.TabIndex = 14;
+            this.TextBoxTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxTelefono_KeyPress);
+            // 
+            // TextBoxNoDoc
+            // 
+            this.TextBoxNoDoc.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TextBoxNoDoc.Location = new System.Drawing.Point(8, 313);
+            this.TextBoxNoDoc.MaxLength = 15;
+            this.TextBoxNoDoc.Name = "TextBoxNoDoc";
+            this.TextBoxNoDoc.Size = new System.Drawing.Size(100, 20);
+            this.TextBoxNoDoc.TabIndex = 14;
+            this.TextBoxNoDoc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxNoDoc_KeyPress);
+            // 
+            // TextBoxLocalidad
+            // 
+            this.TextBoxLocalidad.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TextBoxLocalidad.Location = new System.Drawing.Point(8, 149);
+            this.TextBoxLocalidad.Name = "TextBoxLocalidad";
+            this.TextBoxLocalidad.Size = new System.Drawing.Size(100, 20);
+            this.TextBoxLocalidad.TabIndex = 14;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label9.Location = new System.Drawing.Point(8, 353);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(52, 13);
+            this.label9.TabIndex = 10;
+            this.label9.Text = "Telefono";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label8.Location = new System.Drawing.Point(8, 293);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(103, 13);
+            this.label8.TabIndex = 9;
+            this.label8.Text = "No. de documento";
+            // 
+            // TextBoxDireccion
+            // 
+            this.TextBoxDireccion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TextBoxDireccion.Location = new System.Drawing.Point(8, 88);
+            this.TextBoxDireccion.Name = "TextBoxDireccion";
+            this.TextBoxDireccion.Size = new System.Drawing.Size(100, 20);
+            this.TextBoxDireccion.TabIndex = 14;
             // 
             // label6
             // 
@@ -187,84 +237,62 @@
             this.label7.TabIndex = 8;
             this.label7.Text = "Tipo de Documento";
             // 
-            // label8
+            // TextBoxDescripcion
             // 
-            this.label8.AutoSize = true;
-            this.label8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label8.Location = new System.Drawing.Point(8, 293);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(103, 13);
-            this.label8.TabIndex = 9;
-            this.label8.Text = "No. de documento";
+            this.TextBoxDescripcion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TextBoxDescripcion.Location = new System.Drawing.Point(8, 34);
+            this.TextBoxDescripcion.Name = "TextBoxDescripcion";
+            this.TextBoxDescripcion.Size = new System.Drawing.Size(100, 20);
+            this.TextBoxDescripcion.TabIndex = 14;
             // 
-            // label9
+            // label5
             // 
-            this.label9.AutoSize = true;
-            this.label9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label9.Location = new System.Drawing.Point(8, 353);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(52, 13);
-            this.label9.TabIndex = 10;
-            this.label9.Text = "Telefono";
+            this.label5.AutoSize = true;
+            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label5.Location = new System.Drawing.Point(5, 133);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(56, 13);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Localidad";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label4.Location = new System.Drawing.Point(5, 70);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(55, 13);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Direccion";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label3.Location = new System.Drawing.Point(5, 18);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 13);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Descripcion";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(5, 75);
+            this.label10.Location = new System.Drawing.Point(5, 42);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(92, 13);
             this.label10.TabIndex = 11;
             this.label10.Text = "Limite de credito";
             // 
-            // radButtonTextBox2
-            // 
-            this.radButtonTextBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radButtonTextBox2.Location = new System.Drawing.Point(8, 34);
-            this.radButtonTextBox2.Name = "radButtonTextBox2";
-            this.radButtonTextBox2.Size = new System.Drawing.Size(100, 20);
-            this.radButtonTextBox2.TabIndex = 14;
-            // 
-            // radButtonTextBox3
-            // 
-            this.radButtonTextBox3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radButtonTextBox3.Location = new System.Drawing.Point(8, 88);
-            this.radButtonTextBox3.Name = "radButtonTextBox3";
-            this.radButtonTextBox3.Size = new System.Drawing.Size(100, 20);
-            this.radButtonTextBox3.TabIndex = 14;
-            // 
-            // radButtonTextBox4
-            // 
-            this.radButtonTextBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radButtonTextBox4.Location = new System.Drawing.Point(8, 149);
-            this.radButtonTextBox4.Name = "radButtonTextBox4";
-            this.radButtonTextBox4.Size = new System.Drawing.Size(100, 20);
-            this.radButtonTextBox4.TabIndex = 14;
-            // 
-            // radButtonTextBox5
-            // 
-            this.radButtonTextBox5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radButtonTextBox5.Location = new System.Drawing.Point(5, 374);
-            this.radButtonTextBox5.Name = "radButtonTextBox5";
-            this.radButtonTextBox5.Size = new System.Drawing.Size(100, 20);
-            this.radButtonTextBox5.TabIndex = 14;
-            // 
-            // radButtonTextBox6
-            // 
-            this.radButtonTextBox6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radButtonTextBox6.Location = new System.Drawing.Point(8, 313);
-            this.radButtonTextBox6.Name = "radButtonTextBox6";
-            this.radButtonTextBox6.Size = new System.Drawing.Size(100, 20);
-            this.radButtonTextBox6.TabIndex = 14;
-            // 
             // radGroupBox2
             // 
             this.radGroupBox2.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
-            this.radGroupBox2.Controls.Add(this.radButtonTextBox8);
-            this.radGroupBox2.Controls.Add(this.radButtonTextBox9);
-            this.radGroupBox2.Controls.Add(this.radButtonTextBox10);
+            this.radGroupBox2.Controls.Add(this.TextBoxURL_Tiktok);
+            this.radGroupBox2.Controls.Add(this.TextBoxURL_Web);
+            this.radGroupBox2.Controls.Add(this.TextBoxURL_Twiter);
             this.radGroupBox2.Controls.Add(this.label13);
-            this.radGroupBox2.Controls.Add(this.radButtonTextBox11);
-            this.radGroupBox2.Controls.Add(this.radButtonTextBox12);
+            this.radGroupBox2.Controls.Add(this.TextBoxURL_Istagram);
+            this.radGroupBox2.Controls.Add(this.TextBoxURL_face);
             this.radGroupBox2.Controls.Add(this.label16);
             this.radGroupBox2.Controls.Add(this.label17);
             this.radGroupBox2.Controls.Add(this.label18);
@@ -276,29 +304,29 @@
             this.radGroupBox2.TabIndex = 13;
             this.radGroupBox2.Text = "Redes Sociales";
             // 
-            // radButtonTextBox8
+            // TextBoxURL_Tiktok
             // 
-            this.radButtonTextBox8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radButtonTextBox8.Location = new System.Drawing.Point(5, 249);
-            this.radButtonTextBox8.Name = "radButtonTextBox8";
-            this.radButtonTextBox8.Size = new System.Drawing.Size(100, 20);
-            this.radButtonTextBox8.TabIndex = 14;
+            this.TextBoxURL_Tiktok.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TextBoxURL_Tiktok.Location = new System.Drawing.Point(5, 249);
+            this.TextBoxURL_Tiktok.Name = "TextBoxURL_Tiktok";
+            this.TextBoxURL_Tiktok.Size = new System.Drawing.Size(100, 20);
+            this.TextBoxURL_Tiktok.TabIndex = 14;
             // 
-            // radButtonTextBox9
+            // TextBoxURL_Web
             // 
-            this.radButtonTextBox9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radButtonTextBox9.Location = new System.Drawing.Point(8, 34);
-            this.radButtonTextBox9.Name = "radButtonTextBox9";
-            this.radButtonTextBox9.Size = new System.Drawing.Size(100, 20);
-            this.radButtonTextBox9.TabIndex = 13;
+            this.TextBoxURL_Web.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TextBoxURL_Web.Location = new System.Drawing.Point(8, 34);
+            this.TextBoxURL_Web.Name = "TextBoxURL_Web";
+            this.TextBoxURL_Web.Size = new System.Drawing.Size(100, 20);
+            this.TextBoxURL_Web.TabIndex = 13;
             // 
-            // radButtonTextBox10
+            // TextBoxURL_Twiter
             // 
-            this.radButtonTextBox10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radButtonTextBox10.Location = new System.Drawing.Point(8, 195);
-            this.radButtonTextBox10.Name = "radButtonTextBox10";
-            this.radButtonTextBox10.Size = new System.Drawing.Size(100, 20);
-            this.radButtonTextBox10.TabIndex = 14;
+            this.TextBoxURL_Twiter.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TextBoxURL_Twiter.Location = new System.Drawing.Point(8, 195);
+            this.TextBoxURL_Twiter.Name = "TextBoxURL_Twiter";
+            this.TextBoxURL_Twiter.Size = new System.Drawing.Size(100, 20);
+            this.TextBoxURL_Twiter.TabIndex = 14;
             // 
             // label13
             // 
@@ -310,31 +338,21 @@
             this.label13.TabIndex = 9;
             this.label13.Text = "URL Tiktok";
             // 
-            // radButtonTextBox11
+            // TextBoxURL_Istagram
             // 
-            this.radButtonTextBox11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radButtonTextBox11.Location = new System.Drawing.Point(8, 145);
-            this.radButtonTextBox11.Name = "radButtonTextBox11";
-            this.radButtonTextBox11.Size = new System.Drawing.Size(100, 20);
-            this.radButtonTextBox11.TabIndex = 14;
+            this.TextBoxURL_Istagram.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TextBoxURL_Istagram.Location = new System.Drawing.Point(8, 145);
+            this.TextBoxURL_Istagram.Name = "TextBoxURL_Istagram";
+            this.TextBoxURL_Istagram.Size = new System.Drawing.Size(100, 20);
+            this.TextBoxURL_Istagram.TabIndex = 14;
             // 
-            // label14
+            // TextBoxURL_face
             // 
-            this.label14.AutoSize = true;
-            this.label14.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label14.Location = new System.Drawing.Point(5, 24);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(99, 13);
-            this.label14.TabIndex = 7;
-            this.label14.Text = "Grupo de entidad";
-            // 
-            // radButtonTextBox12
-            // 
-            this.radButtonTextBox12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radButtonTextBox12.Location = new System.Drawing.Point(8, 91);
-            this.radButtonTextBox12.Name = "radButtonTextBox12";
-            this.radButtonTextBox12.Size = new System.Drawing.Size(100, 20);
-            this.radButtonTextBox12.TabIndex = 14;
+            this.TextBoxURL_face.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TextBoxURL_face.Location = new System.Drawing.Point(8, 91);
+            this.TextBoxURL_face.Name = "TextBoxURL_face";
+            this.TextBoxURL_face.Size = new System.Drawing.Size(100, 20);
+            this.TextBoxURL_face.TabIndex = 14;
             // 
             // label16
             // 
@@ -379,38 +397,38 @@
             // radGroupBox3
             // 
             this.radGroupBox3.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
-            this.radGroupBox3.Controls.Add(this.radButtonTextBox7);
-            this.radGroupBox3.Controls.Add(this.comboBox5);
-            this.radGroupBox3.Controls.Add(this.label14);
+            this.radGroupBox3.Controls.Add(this.TextBoxLimiteCredito);
             this.radGroupBox3.Controls.Add(this.label10);
-            this.radGroupBox3.HeaderText = "Grupos / Tipos / Limites";
+            this.radGroupBox3.HeaderText = "Limites";
             this.radGroupBox3.Location = new System.Drawing.Point(228, 339);
             this.radGroupBox3.Name = "radGroupBox3";
             this.radGroupBox3.Size = new System.Drawing.Size(200, 126);
             this.radGroupBox3.TabIndex = 17;
-            this.radGroupBox3.Text = "Grupos / Tipos / Limites";
+            this.radGroupBox3.Text = "Limites";
             // 
-            // radButtonTextBox7
+            // TextBoxLimiteCredito
             // 
-            this.radButtonTextBox7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radButtonTextBox7.Location = new System.Drawing.Point(8, 101);
-            this.radButtonTextBox7.Name = "radButtonTextBox7";
-            this.radButtonTextBox7.Size = new System.Drawing.Size(100, 20);
-            this.radButtonTextBox7.TabIndex = 15;
+            this.TextBoxLimiteCredito.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TextBoxLimiteCredito.Location = new System.Drawing.Point(8, 68);
+            this.TextBoxLimiteCredito.MaxLength = 99999;
+            this.TextBoxLimiteCredito.Name = "TextBoxLimiteCredito";
+            this.TextBoxLimiteCredito.Size = new System.Drawing.Size(100, 20);
+            this.TextBoxLimiteCredito.TabIndex = 15;
+            this.TextBoxLimiteCredito.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxLimiteCredito_KeyPress);
             // 
             // radGroupBox4
             // 
             this.radGroupBox4.AccessibleRole = System.Windows.Forms.AccessibleRole.Grouping;
-            this.radGroupBox4.Controls.Add(this.comboBox3);
-            this.radGroupBox4.Controls.Add(this.comboBox2);
-            this.radGroupBox4.Controls.Add(this.comboBox4);
+            this.radGroupBox4.Controls.Add(this.comboBoxEstatus);
+            this.radGroupBox4.Controls.Add(this.comboBoxEliminable);
+            this.radGroupBox4.Controls.Add(this.comboBoxRolUsuario);
             this.radGroupBox4.Controls.Add(this.label11);
-            this.radGroupBox4.Controls.Add(this.radRichTextEditor1);
-            this.radGroupBox4.Controls.Add(this.radButtonTextBox15);
+            this.radGroupBox4.Controls.Add(this.TextEditorComentario);
+            this.radGroupBox4.Controls.Add(this.TextBoxNombreUsuario);
             this.radGroupBox4.Controls.Add(this.label20);
             this.radGroupBox4.Controls.Add(this.label21);
             this.radGroupBox4.Controls.Add(this.label22);
-            this.radGroupBox4.Controls.Add(this.radButtonTextBox18);
+            this.radGroupBox4.Controls.Add(this.TextBoxContrasena);
             this.radGroupBox4.Controls.Add(this.label25);
             this.radGroupBox4.Controls.Add(this.label26);
             this.radGroupBox4.HeaderText = "Usuario";
@@ -420,13 +438,69 @@
             this.radGroupBox4.TabIndex = 17;
             this.radGroupBox4.Text = "Usuario";
             // 
-            // radButtonTextBox15
+            // comboBoxEstatus
             // 
-            this.radButtonTextBox15.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radButtonTextBox15.Location = new System.Drawing.Point(8, 34);
-            this.radButtonTextBox15.Name = "radButtonTextBox15";
-            this.radButtonTextBox15.Size = new System.Drawing.Size(100, 20);
-            this.radButtonTextBox15.TabIndex = 13;
+            this.comboBoxEstatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxEstatus.FormattingEnabled = true;
+            this.comboBoxEstatus.Items.AddRange(new object[] {
+            "Activa ",
+            "Inactiva"});
+            this.comboBoxEstatus.Location = new System.Drawing.Point(8, 305);
+            this.comboBoxEstatus.Name = "comboBoxEstatus";
+            this.comboBoxEstatus.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxEstatus.TabIndex = 19;
+            // 
+            // comboBoxEliminable
+            // 
+            this.comboBoxEliminable.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxEliminable.FormattingEnabled = true;
+            this.comboBoxEliminable.Items.AddRange(new object[] {
+            "Si",
+            "No"});
+            this.comboBoxEliminable.Location = new System.Drawing.Point(8, 353);
+            this.comboBoxEliminable.Name = "comboBoxEliminable";
+            this.comboBoxEliminable.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxEliminable.TabIndex = 18;
+            // 
+            // comboBoxRolUsuario
+            // 
+            this.comboBoxRolUsuario.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxRolUsuario.FormattingEnabled = true;
+            this.comboBoxRolUsuario.Items.AddRange(new object[] {
+            "Admin",
+            "Supervisor",
+            "User"});
+            this.comboBoxRolUsuario.Location = new System.Drawing.Point(8, 148);
+            this.comboBoxRolUsuario.Name = "comboBoxRolUsuario";
+            this.comboBoxRolUsuario.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxRolUsuario.TabIndex = 20;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label11.Location = new System.Drawing.Point(5, 329);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(70, 13);
+            this.label11.TabIndex = 17;
+            this.label11.Text = "¿Eliminable?";
+            // 
+            // TextEditorComentario
+            // 
+            this.TextEditorComentario.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(189)))), ((int)(((byte)(232)))));
+            this.TextEditorComentario.Location = new System.Drawing.Point(7, 195);
+            this.TextEditorComentario.Name = "TextEditorComentario";
+            this.TextEditorComentario.SelectionFill = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(78)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
+            this.TextEditorComentario.Size = new System.Drawing.Size(187, 74);
+            this.TextEditorComentario.TabIndex = 17;
+            // 
+            // TextBoxNombreUsuario
+            // 
+            this.TextBoxNombreUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TextBoxNombreUsuario.Location = new System.Drawing.Point(8, 34);
+            this.TextBoxNombreUsuario.Name = "TextBoxNombreUsuario";
+            this.TextBoxNombreUsuario.Size = new System.Drawing.Size(100, 20);
+            this.TextBoxNombreUsuario.TabIndex = 13;
             // 
             // label20
             // 
@@ -458,13 +532,13 @@
             this.label22.TabIndex = 8;
             this.label22.Text = "Status";
             // 
-            // radButtonTextBox18
+            // TextBoxContrasena
             // 
-            this.radButtonTextBox18.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radButtonTextBox18.Location = new System.Drawing.Point(8, 91);
-            this.radButtonTextBox18.Name = "radButtonTextBox18";
-            this.radButtonTextBox18.Size = new System.Drawing.Size(100, 20);
-            this.radButtonTextBox18.TabIndex = 14;
+            this.TextBoxContrasena.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TextBoxContrasena.Location = new System.Drawing.Point(8, 91);
+            this.TextBoxContrasena.Name = "TextBoxContrasena";
+            this.TextBoxContrasena.Size = new System.Drawing.Size(100, 20);
+            this.TextBoxContrasena.TabIndex = 14;
             // 
             // label25
             // 
@@ -486,25 +560,6 @@
             this.label26.TabIndex = 3;
             this.label26.Text = "Nombre de usuario";
             // 
-            // radRichTextEditor1
-            // 
-            this.radRichTextEditor1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(189)))), ((int)(((byte)(232)))));
-            this.radRichTextEditor1.Location = new System.Drawing.Point(7, 195);
-            this.radRichTextEditor1.Name = "radRichTextEditor1";
-            this.radRichTextEditor1.SelectionFill = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(78)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
-            this.radRichTextEditor1.Size = new System.Drawing.Size(187, 74);
-            this.radRichTextEditor1.TabIndex = 17;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label11.Location = new System.Drawing.Point(5, 329);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(70, 13);
-            this.label11.TabIndex = 17;
-            this.label11.Text = "¿Eliminable?";
-            // 
             // object_05686bd9_e1c7_4b74_9dc4_e184b82ade3c
             // 
             this.object_05686bd9_e1c7_4b74_9dc4_e184b82ade3c.AccessibleDescription = "Física";
@@ -513,190 +568,121 @@
             this.object_05686bd9_e1c7_4b74_9dc4_e184b82ade3c.StretchHorizontally = true;
             this.object_05686bd9_e1c7_4b74_9dc4_e184b82ade3c.StretchVertically = true;
             // 
-            // comboBox1
+            // ButtonAceptar
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Física",
-            "Jurídica"});
-            this.comboBox1.Location = new System.Drawing.Point(5, 205);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 17;
-            this.comboBox1.Text = "Jurídica";
+            this.ButtonAceptar.Location = new System.Drawing.Point(433, 473);
+            this.ButtonAceptar.Name = "ButtonAceptar";
+            this.ButtonAceptar.Size = new System.Drawing.Size(100, 27);
+            this.ButtonAceptar.TabIndex = 18;
+            this.ButtonAceptar.Text = "Aceptar";
+            this.ButtonAceptar.Click += new System.EventHandler(this.ButtonAceptar_Click);
             // 
-            // comboBox2
+            // ButtonCancelar
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "1 ó True",
-            "0 ó False"});
-            this.comboBox2.Location = new System.Drawing.Point(8, 353);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 18;
-            this.comboBox2.Text = "0 ó False";
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "Activa ",
-            "Inactiva"});
-            this.comboBox3.Location = new System.Drawing.Point(8, 305);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 21);
-            this.comboBox3.TabIndex = 19;
-            this.comboBox3.Text = "Activa";
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
-            "Admin",
-            "Supervisor",
-            "User"});
-            this.comboBox4.Location = new System.Drawing.Point(8, 148);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 21);
-            this.comboBox4.TabIndex = 20;
-            this.comboBox4.Text = "User";
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(5, 43);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(121, 21);
-            this.comboBox5.TabIndex = 21;
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
-            "RNC",
-            "Cédula",
-            "Pasaporte",
-            ""});
-            this.comboBox6.Location = new System.Drawing.Point(8, 256);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(121, 21);
-            this.comboBox6.TabIndex = 22;
-            this.comboBox6.Text = "RNC";
-            // 
-            // radButton1
-            // 
-            this.radButton1.Location = new System.Drawing.Point(433, 473);
-            this.radButton1.Name = "radButton1";
-            this.radButton1.Size = new System.Drawing.Size(100, 27);
-            this.radButton1.TabIndex = 18;
-            this.radButton1.Text = "Aceptar";
-            // 
-            // radButton2
-            // 
-            this.radButton2.Location = new System.Drawing.Point(543, 473);
-            this.radButton2.Name = "radButton2";
-            this.radButton2.Size = new System.Drawing.Size(100, 27);
-            this.radButton2.TabIndex = 19;
-            this.radButton2.Text = "Cancelar";
+            this.ButtonCancelar.Location = new System.Drawing.Point(543, 473);
+            this.ButtonCancelar.Name = "ButtonCancelar";
+            this.ButtonCancelar.Size = new System.Drawing.Size(100, 27);
+            this.ButtonCancelar.TabIndex = 19;
+            this.ButtonCancelar.Text = "Cancelar";
+            this.ButtonCancelar.Click += new System.EventHandler(this.ButtonCancelar_Click);
             // 
             // Agregar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(653, 512);
-            this.Controls.Add(this.radButton2);
-            this.Controls.Add(this.radButton1);
+            this.Controls.Add(this.ButtonCancelar);
+            this.Controls.Add(this.ButtonAceptar);
             this.Controls.Add(this.radGroupBox4);
             this.Controls.Add(this.radGroupBox3);
             this.Controls.Add(this.radGroupBox2);
             this.Controls.Add(this.radGroupBox1);
             this.Controls.Add(this.label1);
             this.Name = "Agregar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar";
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox1)).EndInit();
             this.radGroupBox1.ResumeLayout(false);
             this.radGroupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radButtonTextBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButtonTextBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButtonTextBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButtonTextBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButtonTextBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TextBoxTelefono)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TextBoxNoDoc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TextBoxLocalidad)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TextBoxDireccion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TextBoxDescripcion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox2)).EndInit();
             this.radGroupBox2.ResumeLayout(false);
             this.radGroupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radButtonTextBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButtonTextBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButtonTextBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButtonTextBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButtonTextBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TextBoxURL_Tiktok)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TextBoxURL_Web)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TextBoxURL_Twiter)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TextBoxURL_Istagram)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TextBoxURL_face)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox3)).EndInit();
             this.radGroupBox3.ResumeLayout(false);
             this.radGroupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radButtonTextBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TextBoxLimiteCredito)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radGroupBox4)).EndInit();
             this.radGroupBox4.ResumeLayout(false);
             this.radGroupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radButtonTextBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButtonTextBox18)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radRichTextEditor1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radButton2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TextEditorComentario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TextBoxNombreUsuario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TextBoxContrasena)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ButtonAceptar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ButtonCancelar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private Telerik.WinControls.UI.RadGroupBox radGroupBox1;
-        private Telerik.WinControls.UI.RadButtonTextBox radButtonTextBox5;
-        private Telerik.WinControls.UI.RadButtonTextBox radButtonTextBox6;
-        private Telerik.WinControls.UI.RadButtonTextBox radButtonTextBox4;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private Telerik.WinControls.UI.RadButtonTextBox radButtonTextBox3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private Telerik.WinControls.UI.RadButtonTextBox radButtonTextBox2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label10;
-        private Telerik.WinControls.UI.RadGroupBox radGroupBox2;
-        private Telerik.WinControls.UI.RadButtonTextBox radButtonTextBox8;
-        private Telerik.WinControls.UI.RadButtonTextBox radButtonTextBox9;
-        private Telerik.WinControls.UI.RadButtonTextBox radButtonTextBox10;
-        private System.Windows.Forms.Label label13;
-        private Telerik.WinControls.UI.RadButtonTextBox radButtonTextBox11;
-        private Telerik.WinControls.UI.RadButtonTextBox radButtonTextBox12;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label14;
-        private Telerik.WinControls.UI.RadGroupBox radGroupBox3;
-        private Telerik.WinControls.UI.RadButtonTextBox radButtonTextBox7;
-        private Telerik.WinControls.UI.RadGroupBox radGroupBox4;
-        private System.Windows.Forms.Label label11;
-        private Telerik.WinControls.UI.RadRichTextEditor radRichTextEditor1;
-        private Telerik.WinControls.UI.RadButtonTextBox radButtonTextBox15;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
-        private Telerik.WinControls.UI.RadButtonTextBox radButtonTextBox18;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label26;
         private Telerik.WinControls.RadThemeManager radThemeManager1;
         private Telerik.WinControls.RootRadElement object_05686bd9_e1c7_4b74_9dc4_e184b82ade3c;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private Telerik.WinControls.UI.RadButton radButton1;
-        private Telerik.WinControls.UI.RadButton radButton2;
+        private System.Windows.Forms.ComboBox comboBoxGrupoEntidad;
+        private Telerik.WinControls.UI.RadButton ButtonAceptar;
+        private Telerik.WinControls.UI.RadButton ButtonCancelar;
+        public System.Windows.Forms.Label label1;
+        public Telerik.WinControls.UI.RadGroupBox radGroupBox1;
+        public Telerik.WinControls.UI.RadGroupBox radGroupBox2;
+        public Telerik.WinControls.UI.RadGroupBox radGroupBox3;
+        public Telerik.WinControls.UI.RadGroupBox radGroupBox4;
+        public Telerik.WinControls.UI.RadButtonTextBox TextBoxTelefono;
+        public Telerik.WinControls.UI.RadButtonTextBox TextBoxNoDoc;
+        public Telerik.WinControls.UI.RadButtonTextBox TextBoxLocalidad;
+        public System.Windows.Forms.Label label8;
+        public Telerik.WinControls.UI.RadButtonTextBox TextBoxDireccion;
+        public System.Windows.Forms.Label label6;
+        public System.Windows.Forms.Label label7;
+        public Telerik.WinControls.UI.RadButtonTextBox TextBoxDescripcion;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label label10;
+        public Telerik.WinControls.UI.RadButtonTextBox TextBoxURL_Tiktok;
+        public Telerik.WinControls.UI.RadButtonTextBox TextBoxURL_Web;
+        public Telerik.WinControls.UI.RadButtonTextBox TextBoxURL_Twiter;
+        public System.Windows.Forms.Label label13;
+        public Telerik.WinControls.UI.RadButtonTextBox TextBoxURL_Istagram;
+        public Telerik.WinControls.UI.RadButtonTextBox TextBoxURL_face;
+        public System.Windows.Forms.Label label16;
+        public System.Windows.Forms.Label label17;
+        public System.Windows.Forms.Label label18;
+        public System.Windows.Forms.Label label19;
+        public Telerik.WinControls.UI.RadButtonTextBox TextBoxLimiteCredito;
+        public System.Windows.Forms.Label label11;
+        public Telerik.WinControls.UI.RadRichTextEditor TextEditorComentario;
+        public Telerik.WinControls.UI.RadButtonTextBox TextBoxNombreUsuario;
+        public System.Windows.Forms.Label label20;
+        public System.Windows.Forms.Label label21;
+        public Telerik.WinControls.UI.RadButtonTextBox TextBoxContrasena;
+        public System.Windows.Forms.Label label25;
+        public System.Windows.Forms.Label label26;
+        public System.Windows.Forms.ComboBox comboBoxTipoDoc;
+        public System.Windows.Forms.ComboBox comboBoxTipoEntidad;
+        public System.Windows.Forms.ComboBox comboBoxEstatus;
+        public System.Windows.Forms.ComboBox comboBoxEliminable;
+        public System.Windows.Forms.ComboBox comboBoxRolUsuario;
     }
 }

@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 using System.Windows.Forms;
 
 namespace WindowsFormsAppSellPoint
@@ -11,46 +10,43 @@ namespace WindowsFormsAppSellPoint
             InitializeComponent();
         }
 
-        private GrupoEntidades frm;
+        private GrupoEntidades frm1;
         private void radMenuItem3_Click_1(object sender, EventArgs e)
         {
-            if (frm == null)
+            if (frm1 == null)
             {
-                frm = new GrupoEntidades();
-                frm.FormClosed += (o, args) => frm = null;
+                frm1 = new GrupoEntidades();
+                frm1.FormClosed += (o, args) => frm1 = null;
             }
-            //Codigo para agregar el formulario en el mismo formulario.
-            //frm.TopLevel = false;
-            //panel1.Controls.Add(frm);
-            frm.Show();
-            frm.label1.Text = "Grupo Entidades";
-            frm.BringToFront();
-
+            frm1.Show();
+            frm1.label1.Text = "Grupo Entidades";
+            frm1.BringToFront();
         }
 
-        private Entidades frm2;
-        /*private void radMenuItem4_Click_1(object sender, EventArgs e)
+        private TiposEntidades frm2;
+        private void radMenuItem4_Click_1(object sender, EventArgs e)
         {
             if (frm2 == null)
             {
-                frm2 = new Entidades();
+                frm2 = new TiposEntidades();
                 frm2.FormClosed += (o, args) => frm2 = null;
             }
-            //Codigo para agregar el formulario en el mismo formulario.*/
-
-        private void radMenuItem4_Click_1(object sender, EventArgs e)
-        {
-            TiposEntidades Tentidades = new TiposEntidades();
-            Tentidades.label1.Text = "Tipo Entidades";
-            Tentidades.Show();
+            frm2.Show();
+            frm2.label1.Text = "Tipos Entidades";
+            frm2.BringToFront();
         }
 
-        private TiposEntidades frm3;
+        private Entidades frm3;
         private void radMenuItem5_Click(object sender, EventArgs e)
         {
-            Entidades entidades = new Entidades();
-            entidades.label1.Text = "Entidades";
-            entidades.Show();
+            if (frm3 == null)
+            {
+                frm3 = new Entidades();
+                frm3.FormClosed += (o, args) => frm3 = null;
+            }
+            frm3.Show();
+            frm3.labelEntidades.Text = "Entidades";
+            frm3.BringToFront();
         }
 
         private void radMenuItem7_Click(object sender, EventArgs e)
@@ -69,7 +65,7 @@ namespace WindowsFormsAppSellPoint
         {
             statusBar1.Panels[0].Text = DateTime.Now.ToLongTimeString();
             statusBar1.Panels[1].Text = DateTime.Now.ToLongDateString();
-            statusBar1.Panels[2].Text = "USER: "+FormLogin.UserName;
+            statusBar1.Panels[2].Text = FormLogin.UserName;
             //StatusBarPanel userPanel = new StatusBarPanel();
             //userPanel.Text = FormLogin.UserName;
             //statusBar1.Panels.Add(userPanel);
@@ -82,11 +78,7 @@ namespace WindowsFormsAppSellPoint
 
         private void radMenuItem8_Click(object sender, EventArgs e)
         {
-            this.Close();        }
-
-        private void statusBar1_PanelClick(object sender, StatusBarPanelClickEventArgs e)
-        {
-
+            this.Close();
         }
     }
 }

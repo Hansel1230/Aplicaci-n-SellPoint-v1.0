@@ -165,5 +165,11 @@
   <ItemGroup>
     <None Include="Resources\Splashbien-removebg-preview.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Proyecto Entidades\Proyecto Entidades\Entidades\ProyectoEntidades.csproj">
+      <Project>{a1483a8c-dd80-4b4d-92d1-18088d706afb}</Project>
+      <Name>ProyectoEntidades</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
