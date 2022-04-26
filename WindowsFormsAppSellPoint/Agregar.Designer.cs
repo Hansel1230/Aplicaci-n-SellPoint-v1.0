@@ -140,13 +140,14 @@
             this.comboBoxTipoDoc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxTipoDoc.FormattingEnabled = true;
             this.comboBoxTipoDoc.Items.AddRange(new object[] {
-            "RNC",
+            "",
             "Cédula",
             "Pasaporte",
-            ""});
+            "RNC"});
             this.comboBoxTipoDoc.Location = new System.Drawing.Point(8, 256);
             this.comboBoxTipoDoc.Name = "comboBoxTipoDoc";
             this.comboBoxTipoDoc.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxTipoDoc.Sorted = true;
             this.comboBoxTipoDoc.TabIndex = 22;
             // 
             // comboBoxTipoEntidad
@@ -159,6 +160,7 @@
             this.comboBoxTipoEntidad.Location = new System.Drawing.Point(5, 205);
             this.comboBoxTipoEntidad.Name = "comboBoxTipoEntidad";
             this.comboBoxTipoEntidad.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxTipoEntidad.Sorted = true;
             this.comboBoxTipoEntidad.TabIndex = 17;
             // 
             // TextBoxTelefono
@@ -448,6 +450,7 @@
             this.comboBoxEstatus.Location = new System.Drawing.Point(8, 305);
             this.comboBoxEstatus.Name = "comboBoxEstatus";
             this.comboBoxEstatus.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxEstatus.Sorted = true;
             this.comboBoxEstatus.TabIndex = 19;
             // 
             // comboBoxEliminable
@@ -455,11 +458,12 @@
             this.comboBoxEliminable.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxEliminable.FormattingEnabled = true;
             this.comboBoxEliminable.Items.AddRange(new object[] {
-            "Si",
-            "No"});
+            "No",
+            "Si"});
             this.comboBoxEliminable.Location = new System.Drawing.Point(8, 353);
             this.comboBoxEliminable.Name = "comboBoxEliminable";
             this.comboBoxEliminable.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxEliminable.Sorted = true;
             this.comboBoxEliminable.TabIndex = 18;
             // 
             // comboBoxRolUsuario
