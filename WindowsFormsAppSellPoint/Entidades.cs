@@ -92,8 +92,8 @@ namespace WindowsFormsAppSellPoint
             {
                 if (MessageBox.Show("Esta seguro de eliminar la entidad?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) 
                 {
-                    beEntidades.IdEntidad= Convert.ToInt32(DataGridViewEntidades.CurrentRow.Cells[0].ToString());
-                    daEntidades.Eliminar(ref beEntidades);
+                    beEntidades.IdEntidad= Convert.ToInt32(DataGridViewEntidades.CurrentRow.Cells[0].Value.ToString());
+                    DataGridViewEntidades.DataSource = daEntidades.Eliminar(ref beEntidades);
                     MessageBox.Show("Entidad eliminada de manera exitosa");
                     CargarData();
                 }
